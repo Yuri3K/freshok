@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+.idea/*
+.vs code
+*.sublime*
+npm_debug.*
+
+
+diat/
+node_modules
+package-lock.json
+app/css/* 
