@@ -4,6 +4,120 @@
 @import 'global';
 
 
+.header {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %sans-700;
+        position: relative;
+        padding: 12px 0;
+        background: $dark-800;
+        color: $white;
+        
+        &::before {
+            @extend %line;
+        }
+    }
+
+    &__service,
+    &__description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 55px;
+    }
+
+    &__descr:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &__link {
+        color: inherit;
+        padding: 15px 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        
+        &--delivery:before,
+        &--call::before {
+            content: "";
+            position: relative;
+            top: 4px;
+            display: inline-block;
+            width: 32px;
+            height: 22px;
+            margin-right: 12px;
+            color: inherit;
+            @extend %bg;
+        }
+
+        &--delivery:before{
+            background-image: url('../images/delivery.svg');
+        }
+
+        &--call:before{
+            background-image: url('../images/call.svg');
+            width: 22px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        background-color: $green-900;
+        position: relative;
+
+        &::before {
+            @extend %line;
+        }
+    }
+    
+    .user {
+        display: flex;
+        align-items: center;
+        
+        &__item:not(:last-child) {
+            margin-right: 33px;
+        }
+        
+        &__link {
+            position: relative;
+            @extend %sans-600;
+            display: block;
+            color: $red-900;
+            font-size: 10px;
+            line-height: 1;
+            z-index: 1;
+            
+            &--user {
+                @extend %bg;
+                background-image: url('../images/icon-user.svg');
+                width: 25px;
+                height: 32px;
+                
+                &:after {
+                    @extend %users-after;
+                    left: -13px;
+                }
+                
+                &:hover::after {
+                    background-color: $white;
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+}
 
 
 
