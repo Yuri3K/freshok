@@ -32,6 +32,17 @@
 }
 
 @font-face {
+    font-family: 'Ruda-Black', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    src: local('Ruda-Black'),
+         url('../fonts/Ruda-Black.woff2') format('woff2'),
+         url('../fonts/Ruda-Black.woff') format('woff'),
+         url('../fonts/Ruda-Black.woff') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Ruda-Bold', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -50,6 +61,17 @@
          url('../fonts/Ruda-SemiBold.woff2') format('woff2'),
          url('../fonts/Ruda-SemiBold.woff') format('woff'),
          url('../fonts/Ruda-SemiBold.woff') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Signika-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: local('Signika-Bold'),
+         url('../fonts/Signika-Bold.woff2') format('woff2'),
+         url('../fonts/Signika-Bold.woff') format('woff'),
+         url('../fonts/Signika-Bold.woff') format('ttf');
     font-display: swap;
 }
 

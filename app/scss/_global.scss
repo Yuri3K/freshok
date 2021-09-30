@@ -11,6 +11,60 @@ body {
     max-width: 1320px;
     padding: 0 15px;
     margin: 0 auto;
+
+}
+
+.sr-only {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.logo {
+    transition: all 0.5s;
+    
+    &:hover {
+        transform: rotateY(360deg);
+    }
+
+    &:focus {
+        box-shadow: 3px 3px 5px #000;
+    }
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+.button {
+    font-size: 18px;
+    line-height: 1.3;
+    color: $white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    background-color: $green-900;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: #4D810C;
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 0px 4px #E0EDCF;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.5);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 button {
@@ -18,13 +72,24 @@ button {
 }
 
 .menu {
-    width: 240px;
-    height: 50px;
-    background-color: $white;
-    padding: 16px 0;
-    border-radius: 5px;
+    position: relative;
 
-    &__link {
+    // &:hover .menu__sublist {
+    //     top: 100%;
+    //     opacity: 1;
+    // }
+
+    &:focus .menu__sublist {
+        top: 100%;
+        opacity: 1;
+    }
+
+    &__btn {
+        border-radius: 5px;
+        transition: all 0.5s;
+        width: 240px;
+        height: 50px;
+        background-color: $white;
         position: relative;
         @extend %sans-600;
         @extend %bg;
@@ -54,12 +119,53 @@ button {
             margin-right: 11px;
             background-image: url('../images/arrow_down.svg');
         }
+
+        
+    }
+
+    &__sublist {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        top: -1000px;
+        transition: opacity 0.5s;
+        z-index: 1;
+
+        &.show {
+            opacity: 1;
+            top: 100%;
+        }
+        
+    }
+
+    &__subitem:last-child a {
+        border-radius: 0 0 6px 6px;
+        border-bottom: none;
     }
 
     &__sublink {
-        color: #000;
+        display: block;
+        padding: 15px 20px;
         font-size: 16px;
         line-height: 1.2;
+        letter-spacing: 0.07em;
+        color: #000;
+        background-color: $white;
+        border-bottom: 1px solid rgba(193, 193, 193, 0.3);
+        border-left: 3px solid transparent;
+
+        &:hover {
+            border-left: 3px solid $green-900;
+            color: $green-900;
+        }
+
+        &:focus {
+            background-color: $silver-600;
+        }
+
+        &:active {
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -90,12 +196,24 @@ button {
         width: 100%;
         height: 50px;
         padding-left: 50px;
-        border-bottom-left-radius: 5px;
-        border-top-left-radius: 5px;
-        
+        border-radius: 6px 0 0 6px;
+        transition: all 0.3s;
+
         &::placeholder {
             color: $dark-800;
             letter-spacing: 0.03em;
+        }
+
+        &:hover::placeholder {
+            letter-spacing: 2px;
+        }
+
+        &:focus {
+            font-size: 18px;
+        }
+
+        &:active::placeholder {
+            color: $green-900
         }
     } 
 
@@ -105,8 +223,20 @@ button {
         background-color: $dark-800;
         width: 28%;
         text-transform: uppercase;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+        border-radius: 0px 6px 6px 0px;
+
+        &:hover {
+            background-color: rgba(49, 53, 43, 0.85);
+        }
+
+        &:focus {
+            position: relative;
+            box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+        }
+
+        &:active {
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 
@@ -129,6 +259,14 @@ button {
         background-color: $white;
         opacity: 0.1;
     }
+
+    &:focus {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        transform: scale(0.8);
+    }
 }
 
 .cart {
@@ -150,6 +288,14 @@ button {
     &:hover::after {
         background-color: $white;
         opacity: 0.1;
+    }
+
+    &:focus {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        transform: scale(0.8);
     }
 }
 
