@@ -1,4 +1,5 @@
 $green-900: #63A60F;
+$green-1000: #4D810C;
 $green-200:#E0EDCF;
 $green-100:#EFF6E7;
 $dark-900: #121212;
@@ -10,6 +11,12 @@ $yellow-900: #FFB800;
 $silver-600: #C1C1C1;
 $silver-100: #F6F6F6;
 $white: #FFFFFF;
+$black: #000;
+$hov-arrow: #E0EDCF;
+$act-arrow: #F3F3F2;
+$foc-arrow: #F2F2F2;
+$border: #111111;
+
 
 %sans-700 {
     font-family: 'OpenSans-Bold', sans-serif;
@@ -81,10 +88,48 @@ $white: #FFFFFF;
     line-height: 1.8;
 }
 
-%users-after {
+%user-after {
     content: '';
     position: absolute;
     padding: 25px;
     top: -10px;
     left: -10px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+%h-f-a-user {
+    transition: all 0.5s;
+
+    &:hover::after {
+        background-color: $white;
+        opacity: 0.1;
+    }
+
+    &:focus {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+%h-f-a-link {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+         opacity: 0.7;
+    }
+
+    &:focus {
+        color: $yellow-900;
+    }
+
+    &:active {
+        border-left: 2px solid $yellow-900;
+        border-right: 2px solid $yellow-900;
+    }
 }
