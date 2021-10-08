@@ -1,0 +1,24 @@
+.go-to {
+        align-self: flex-start;
+        font-size: 14px;
+        color: inherit;
+        margin: 5px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        text-decoration: underline 2px;
+        text-underline-offset: 5px;
+        flex-shrink: 0;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $main-1000;
+        }
+
+        &:focus {
+            color: $bright-500;
+        }
+
+        &:active {
+            color: $bright-800;
+        }
+    }

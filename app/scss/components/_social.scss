@@ -1,0 +1,38 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        @extend %bg;
+        background-size: contain;
+        @extend %conditions-ico;
+
+        &:after {
+            @extend %user-after;
+        }
+    }
+
+    &__link--facebook {
+        background-image: url('../../images/social/facebook.svg');
+    }
+
+    &__link--youtube {
+        background-image: url('../../images/social/youtube.svg');
+    }
+    
+    &__link--telegram {
+        background-image: url('../../images/social/telegram.svg');
+    }
+    
+    &__link--instagram {
+        background-image: url('../images/social/instagram.svg');
+    }
+}

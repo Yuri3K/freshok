@@ -1,0 +1,28 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 47px;
+    
+    &__box:not(:last-child) {
+        margin-right: 17px;
+    }
+
+    &__button {
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: $dark-500;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active {
+            border-bottom: 3px solid $main-200;
+        }
+
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+}

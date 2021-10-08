@@ -1,0 +1,10 @@
+.banner {
+    padding-bottom: 70px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 630px 300px 300px;
+        grid-column-gap: 30px;
+    }
+
+}

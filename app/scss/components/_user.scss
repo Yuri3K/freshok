@@ -1,0 +1,22 @@
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+    &__item:not(:last-child) {
+        margin-right: 33px;
+    }
+
+    & .man,
+    & .like, 
+    & .cart {
+        @extend %conditions-ico;
+    }
+
+    & .like,
+    & .cart {
+        &__counter {
+        @extend %user-pos;
+        }
+    }
+}

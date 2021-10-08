@@ -1,0 +1,49 @@
+.hotdeal {
+    font-size: 0;
+
+    &__box {
+        position: relative;
+        @extend %bg;
+        min-height: 600px;
+    }
+
+    &__inbox {
+        @extend %tr-y;
+        padding: 24px;
+        background-color: rgba($bright-1000, 0.8);
+        border-radius: 6px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 1290px;
+    }
+
+    &__title {
+        font-family: 'Ruda-Bold', sans-serif;
+        font-weight: 700;
+        width: 75%;
+        font-size: 60px;
+        line-height: 1.3;
+        color: $dark-500;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        letter-spacing: -2.5px;
+    }
+
+    &__stock {
+        display: block;
+        color: $bright-300;
+        letter-spacing: -1px;
+    }
+    
+    &__text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        color: $bright-1000;
+        background-color: $main-900;
+        @extend %conditions-button
+    }
+}

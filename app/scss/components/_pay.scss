@@ -1,0 +1,35 @@
+.pay {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        @extend %bg;
+        background-size: contain;
+        height: 29px;
+        @extend %conditions-ico;
+    }
+
+    &__link--visa {
+        width: 93px;
+        background-image: url('../../images/pay/visa.svg');
+
+        &:after {
+            @extend %user-after;
+            padding: 25px 58px;
+        }
+    }
+    &__link--mastercard {
+        width: 49px;
+        background-image: url('../../images/pay/mastercard.svg');
+
+        &:after {
+            @extend %user-after;
+            padding: 25px 35px;
+        }
+    }
+}

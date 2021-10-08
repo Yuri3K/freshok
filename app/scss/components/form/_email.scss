@@ -1,0 +1,32 @@
+.email {
+    width: 306px;
+    height: 40px;
+    margin-right: 35px;
+    top: 0;
+
+    .form__label {
+        max-width: 300px;
+        line-height: 1;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .form__field {
+        padding: 0 6px 0 10px;
+        flex-grow: 1;
+    }
+
+    .form__button {
+        padding: 12px 16px;
+        font-weight: 700;
+        font-size: 12px;
+        flex-shrink: 0;
+        background-color: $main-900;
+        @extend %conditions-button
+    }
+}

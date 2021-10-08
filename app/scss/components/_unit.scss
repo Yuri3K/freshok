@@ -1,0 +1,57 @@
+.unit {
+    position: relative;
+    padding: 57px 0 18px;
+    max-width: 300px;
+    min-height: 409px;
+    border: 1px solid rgba($dark-950, 0.2);
+    border-radius: 6px;
+
+    &:hover {
+        border: 1px solid $main-900;
+    }
+
+    &__like {
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        @extend %conditions-ico;
+        background-image: url('../images/icon-heart-grey.svg');
+
+        &:hover {
+            background-image: url('../images/icon-heart-yellow.svg');
+        }
+    }
+
+    &__img {
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+        max-height: 215px;
+        margin-bottom: 18px;
+    }
+
+    &__bottom {
+        padding: 0 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 105px;
+    }
+
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        letter-spacing: 1px;
+        line-height: 1;
+    }
+
+    &__cart {
+        border-radius: 3px;
+        margin-bottom: 5px;
+        background-color: $main-900;
+        background-size: 16px;
+        @extend %conditions-button;
+    }
+}

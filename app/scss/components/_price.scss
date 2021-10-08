@@ -1,0 +1,11 @@
+.price {
+    
+    &__cost:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    &__cost--old {
+        position: relative;
+        color: $secondary-600;
+    }
+}

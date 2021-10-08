@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+
+    &__field {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 6px 0 0 6px;
+        transition: all 0.3s;
+
+        &::placeholder {
+            color: $dark-800;
+            letter-spacing: 0.03em;
+            transition: all 0.3s;
+        }
+
+        &:hover::placeholder {
+            letter-spacing: 2px;
+        }
+
+        &:focus {
+            font-size: 16px;
+        }
+
+        &:active::placeholder {
+            color: $main-900
+        }
+    }
+
+    &__button {
+        min-width: 28%;
+        max-width: 50%;
+        color: $bright-1000;
+        text-transform: uppercase;
+        border-radius: 0px 6px 6px 0px;
+        transition: all 0.3s;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+
+

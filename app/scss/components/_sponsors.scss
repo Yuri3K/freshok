@@ -1,0 +1,36 @@
+.sponsors {
+
+    &__item {
+        position: relative;
+        height: 200px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+        transition: all 1s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            opacity: 1;
+            transform: scale(2) translate(-25%, -25%);
+        }
+
+        &:active {
+            opacity: 1;
+            transform: scale(0.9) translate(-55%, -55%);
+
+        }
+    }
+
+    &__image {
+        object-fit: contain;
+    }
+    
+}

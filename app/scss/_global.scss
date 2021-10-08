@@ -4,14 +4,32 @@ html, body {
 }
 
 body {
-    @extend %sans-400;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     font-size: 14px;
     color: $dark-500;
     line-height: 1.4;
-    background-color: $white;
+    background-color: $bright-1000;
     letter-spacing: 0.03em;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width:100%;
+    position:absolute;
+    height:100%;
+    left:0;
+}
+
+.currency {
+    &::after {
+        content: '₽';
+    }
 }
 
 .main {
@@ -22,11 +40,10 @@ body {
     max-width: 1320px;
     padding: 0 15px;
     margin: 0 auto;
-
 }
 
 .sr-only {
-	position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -38,162 +55,74 @@ body {
     overflow: hidden;
 }
 
-.logo {
-    transition: all 0.5s;
-    
-    &:hover {
-        transform: rotateY(360deg);
-    }
-
-    &:focus {
-        box-shadow: 3px 3px 5px $black;
-    }
-
-    &:active {
-        transform: scale(1.1);
-    }
-}
-
-.form-btn {
-    @extend %sans-600;
-    color: $white;
-    background-color: $dark-800;
-    width: 28%;
-    text-transform: uppercase;
-    border-radius: 0px 6px 6px 0px;
-}
-
 .button {
     padding: 12px 24px;
     font-size: 18px;
     line-height: 1.3;
     text-align: center;
     letter-spacing: 1px;
-    color: $white;
-    background-color: $green-900;
     border-radius: 6px;
-}
-
-.btn-light {
-    padding: 12px 24px;
-    font-size: 18px;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $green-900;
-    background-color:$white;
-    border: 1px solid $green-900;
-    border-radius: 6px;
-}
-.h-f-a {
-    transition: all 0.3s;
-
-    &:hover {
-        background-color: $green-1000;
-    }
-
-    &:focus {
-        box-shadow: 0px 0px 0px 4px $hov-arrow;
-    }
-
-    &:active {
-        color: rgba($white, 0.5);
-        box-shadow: inset 0px 4px 4px rgba($black, 0.25);
-    }
-}
-
-.h-f-a-2 {
-    transition: all 0.3s;
-
-    &:hover {
-        background-color:  $green-100;
-    }
-
-    &:focus {
-        box-shadow: 0px 0px 0px 4px rgba($green-900, 0.5);
-    }
-
-    &:active {
-        color: rgba($green-900, 0.5);
-        box-shadow: inset 0px 10px 4px rgba($black, 0.1)
-    }
-}
-
-.h-f-a-3 {
-    transition: all 0.3s;
-
-    &:hover {
-        background-color: rgba($dark-800, 0.85);
-    }
-
-    &:focus {
-        position: relative;
-        box-shadow: 0px 0px 0px 4px rgba($white, 0.5);
-    }
-
-    &:active {
-        color: rgba($white, 0.5);
-    }
-}
-
-button {
-    cursor: pointer;
-}
-
-.like {
-    position: relative;
-    width: 32px;
-    height: 29px;
-    background-image: url('../images/icon-heart.svg');
-    @extend %bg;
-    @extend %h-f-a-user;
-
-    &:after {
-        @extend %user-after;
-    }
-
-    &__counter {
-        @extend %user-pos;
-    }
-}
-
-.cart {
-    position: relative;
-    width: 32px;
-    height: 31px;
-    background-image: url('../images/icon-cart.svg');
-    @extend %bg;
-    @extend %h-f-a-user;
-    
-
-    &:after {
-        @extend %user-after;
-        left: -7px;
-    }
-
-    &__counter {
-        @extend %user-pos;
-    }
+    transition: all 1s;
 }
 
 .title {
-    @extend %ruda-600;
+    font-family: 'Ruda-', sans-serif;
+    font-weight: 600;
     font-size: 32px;
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
     color: $dark-900;
     letter-spacing: -2px;
+    margin-bottom: 28px;
 }
 
+.cart-title {
+        font-family: 'Ruda-', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.4;
+        color: $dark-900;
+        text-align: left;
+        letter-spacing: 0;
+        max-height: 60px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        flex-grow: 1;
+    }
 
 .throw {
     position: relative;
 }
 
-svg {
-    width:100%;
-    position:absolute;
-    height:100%;
-    left:0;
+.favour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+    margin-bottom: 48px;
+}
+
+.price__index {
+    font-size: 14px;
+}
+
+.presence {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    color: $main-900;
+    align-self: flex-start;
+    text-transform: uppercase;
+
+    &.ending {
+        color: $bright-300;
+    }
+
+    &.end {
+        color: $secondary-600;
+    }
 }

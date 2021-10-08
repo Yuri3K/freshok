@@ -1,0 +1,31 @@
+.stock {
+    padding: 72px 0;
+    background-color: $secondary-150;
+    text-align: center;
+
+
+    & .button {
+        color: $bright-1000;
+        background-color: $main-900;
+        @extend %conditions-button
+    }
+
+    &__button {
+        background-color:$bright-1000;
+        border: 1px solid $main-900;
+
+        &:hover {
+            background-color:  $main-100;
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 0px 4px rgba($main-900, 0.5);
+        }
+
+        &:active {
+            color: rgba($main-900, 0.5);
+            box-shadow: inset 0px 10px 4px rgba($dark-1000, 0.1)
+        }
+    }
+}
+

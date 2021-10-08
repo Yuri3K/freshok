@@ -1,0 +1,45 @@
+.badge {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    max-width: 200px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+    color: $bright-1000;
+    margin: 12px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    &__link {
+        display: block;
+        border-radius: 6px;
+        padding: 3px 6px;
+        margin: 0 0 6px 0px;
+        color: $bright-1000;
+        @extend %conditions-button;
+    }
+
+    &__link--new {
+        background-color: $main-900;
+    }
+
+    &__link--discount {
+        background-color: $bright-300;
+
+        &:hover {
+            background-color: $bright-200;
+        }
+    }
+
+    &__link--hit {
+        background-color: $bright-800;
+
+        &:hover {
+            background-color: $bright-700;
+        }
+    }
+}

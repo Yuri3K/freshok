@@ -1,0 +1,100 @@
+.catalog {
+    position: relative;
+    margin: 10px 0;
+
+    &__btn {
+        border-radius: 6px;
+        transition: all 0.5s;
+        min-width: 240px;
+        max-width: 500px;
+        height: 50px;
+        background-color: $bright-1000;
+        position: relative;
+        font-weight: 600;
+        @extend %bg;
+        color: $main-900;
+        padding: 15px 35px 15px 60px;
+        margin-right: 15px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @extend %conditions-button;
+
+
+        &::before,
+        &::after {
+            content: "";
+            @extend %tr-y;
+            display: inline-block;
+        }
+
+        &::before {
+            left: 0;
+            width: 25px;
+            height: 17px;
+            margin-left: 17px;
+            background-image: url('../images/buger_icon.svg');
+        }
+
+        &::after {
+            right: 0;
+            width: 8px;
+            height: 4px;
+            margin-right: 11px;
+            background-image: url('../images/arrow_down.svg');
+        }
+
+        &:hover{
+            background-color: $main-200;
+            border-radius: 6px 6px 0px 0px;
+        }
+    }
+
+    &__sublist {
+        position: absolute;
+        width: calc( 100% - 15px );
+        opacity: 0;
+        left: -200vw;
+        transition: opacity 0.5s;
+        z-index: 1;
+
+        &.show {
+            opacity: 1;
+            left: 0;
+        }
+        
+    }
+
+    &__subitem:last-child a {
+        border-radius: 0 0 6px 6px;
+        border-bottom: none;
+    }
+
+    &__sublink {
+        display: block;
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.07em;
+        color: $dark-1000;
+        background-color: $bright-1000;
+        border-bottom: 1px solid rgba($secondary-600, 0.3);
+        border-left: 3px solid transparent;
+
+        &:hover {
+            border-left: 3px solid $main-900;
+            color: $main-900;
+        }
+
+        &:focus {
+            background-color: $secondary-600;
+        }
+
+        &:active {
+            letter-spacing: 2px;
+        }
+    }
+}

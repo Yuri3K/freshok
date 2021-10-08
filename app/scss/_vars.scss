@@ -1,57 +1,23 @@
-$green-900: #63A60F;
-$green-1000: #4D810C;
-$green-200:#E0EDCF;
-$green-100:#EFF6E7;
+$main-1000: #4D810C;
+$main-900: #63A60F;
+$main-200:#E0EDCF;
+$main-100:#EFF6E7;
+$secondary-600: #C1C1C1;
+$secondary-300: #F2F2F2;
+$secondary-200: #F3F3F2;
+$secondary-150: #F5F5F5;
+$secondary-100: #F6F6F6;
+$dark-1000: #000;
+$dark-950: #111111;
 $dark-900: #121212;
 $dark-800: #31352B;
 $dark-500: #505050;
-$red-900: #CF3E3B;
-$orange-900: #FF7A00;
-$yellow-900: #FFB800;
-$silver-600: #C1C1C1;
-$silver-100: #F6F6F6;
-$white: #FFFFFF;
-$black: #000;
-$hov-arrow: #E0EDCF;
-$act-arrow: #F3F3F2;
-$foc-arrow: #F2F2F2;
-$border: #111111;
-
-
-%sans-700 {
-    font-family: 'OpenSans-Bold', sans-serif;
-    font-weight: 700;
-}
-
-%sans-600 {
-    font-family: 'OpenSans-SemiBold', sans-serif;
-    font-weight: 600;
-}
-
-%sans-400 {
-    font-family: 'OpenSans-Regular', sans-serif;
-    font-weight: 400;
-}
-
-%ruda-900 {
-    font-family: 'Ruda-Black', sans-serif;
-    font-weight: 900;
-}
-
-%ruda-700 {
-    font-family: 'Ruda-Bold', sans-serif;
-    font-weight: 700;
-}
-
-%ruda-600 {
-    font-family: 'Ruda-SemiBold', sans-serif;
-    font-weight: 600;
-}
-
-%signika-700 {
-    font-family: 'Signika-Bold', sans-serif;
-    font-weight: 600;
-}
+$bright-1000: #FFFFFF;
+$bright-500: #FF7A00;
+$bright-800: #FFB800;
+$bright-700: #b9ab2a;
+$bright-300: #CF3E3B;
+$bright-200: #a12e5e;
 
 %bg {
     background-repeat: no-repeat;
@@ -80,7 +46,7 @@ $border: #111111;
     position: absolute;
     width: 18px;
     height: 18px;
-    background-color: $white;
+    background-color: $bright-1000;
     border-radius: 50%;
     top:-8px;
     left: -5px;
@@ -95,14 +61,47 @@ $border: #111111;
     top: -10px;
     left: -10px;
     border-radius: 3px;
-    transition: all 0.3s;
 }
 
-%h-f-a-user {
+%conditions-button {
+    transition: all 1s;
+
+    &:hover {
+        background-color: $main-1000;
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 0px 4px $main-200;
+    }
+
+    &:active {
+        color: rgba($bright-1000, 0.5);
+        box-shadow: inset 0px 4px 4px rgba($dark-1000, 0.25);
+    }
+}
+
+%conditions-logo {
+    transition: all 0.5s;
+    
+    &:hover {
+        transform: rotateY(360deg);
+    }
+
+    &:focus {
+        box-shadow: 3px 3px 5px $dark-1000;
+    }
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+%conditions-ico {
     transition: all 0.5s;
 
     &:hover::after {
-        background-color: $white;
+        transition: all 0.5s;
+        background-color: $bright-1000;
         opacity: 0.1;
     }
 
@@ -115,21 +114,21 @@ $border: #111111;
     }
 }
 
-%h-f-a-link {
+%conditions-link {
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
     transition: all 0.3s;
 
     &:hover {
-         opacity: 0.7;
+        opacity: 0.7;
     }
 
     &:focus {
-        color: $yellow-900;
+        color: $bright-800;
     }
 
     &:active {
-        border-left: 2px solid $yellow-900;
-        border-right: 2px solid $yellow-900;
+        border-left: 2px solid $bright-800;
+        border-right: 2px solid $bright-800;
     }
 }

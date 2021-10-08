@@ -1,0 +1,89 @@
+.header {
+
+    &__top {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        font-weight: 700;
+        color: $bright-1000;
+        background-color: $dark-800;
+
+        &::before {
+            @extend %line;
+        }
+    }
+
+    &__item {
+        padding: 12px 0;
+    }
+
+    &__item:nth-child(2) {
+        flex-grow: 1;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__item--delivery {
+         position: relative;
+         padding-right: 35px;
+         padding-left: 42px;
+         &::before {
+            width: 32px;
+            background-image: url('../images/delivery.svg');
+         }
+    }
+
+    &__item--call {
+        position: relative;
+        padding-left: 33px;
+        &::before {
+            width: 22px;
+            background-image: url('../images/call.svg');
+        }
+    }
+    
+    &__item--delivery::before,
+    &__item--call::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        
+        height: 22px;
+        @extend %bg;
+    }
+
+    &__link {
+    color: white;
+    padding: 15px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    @extend %conditions-link;
+    }
+
+    &__main {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        background-color: $main-900;
+
+        &::before {
+            @extend %line;
+        }
+    }
+
+    .logo {
+        @extend %conditions-logo;
+
+        &__img {
+            object-fit: contain;
+        }
+    }
+}
