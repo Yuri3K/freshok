@@ -14,7 +14,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-bottom: 20px;
         border-bottom: 1px solid rgba($bright-1000, 0.1);
         padding-left: calc( ( 100vw - 100% ) / 2);
         margin-left: calc(( 100% - 100vw ) / 2);
@@ -23,12 +22,11 @@
     }
 
     &__subscribe {
-        align-self: center;
-        margin-right: 115px;
+        margin-right: 150px;
     }
 
     &__menu {
-        margin-right: 10px;
+        margin-right: 12px;
     }
 
     &__list {
@@ -40,7 +38,7 @@
     }
 
     &__item {
-        width: 33%;
+        width: 33.33%;
     }
 
     &__link {
@@ -56,6 +54,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
     }
 
     &__bottom .footer__copy {

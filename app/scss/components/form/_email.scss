@@ -1,14 +1,12 @@
 .email {
     width: 306px;
     height: 40px;
-    margin-right: 35px;
-    top: 0;
+    flex-wrap: wrap;
 
     .form__label {
-        max-width: 300px;
+        width: 100%;
         line-height: 1;
-        position: absolute;
-        top: 0;
+        margin-bottom: 17px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
