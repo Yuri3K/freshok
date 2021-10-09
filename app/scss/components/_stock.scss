@@ -3,6 +3,10 @@
     background-color: $secondary-150;
     text-align: center;
 
+    &__title {
+        margin-bottom: 32px;
+    }
+
 
     & .button {
         color: $bright-1000;

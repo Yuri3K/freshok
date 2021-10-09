@@ -2,6 +2,10 @@
     padding: 72px 0;
     text-align: center;
 
+    &__title {
+        margin-bottom: 32px;
+    }
+
     &__button {
         background-color:$bright-1000;
         border: 1px solid $main-900;

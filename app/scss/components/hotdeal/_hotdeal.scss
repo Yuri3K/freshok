@@ -32,6 +32,7 @@
 
     &__stock {
         display: block;
+        margin-bottom: 12px;
         color: $bright-300;
         letter-spacing: -1px;
     }
@@ -42,6 +43,7 @@
     }
 
     &__button {
+        display: inline-block;
         color: $bright-1000;
         background-color: $main-900;
         @extend %conditions-button
