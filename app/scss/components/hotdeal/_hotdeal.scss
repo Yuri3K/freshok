@@ -1,7 +1,7 @@
 .hotdeal {
     font-size: 0;
 
-    &__box {
+    &__wrapper {
         position: relative;
         @extend %bg;
         min-height: 600px;

@@ -1,6 +1,7 @@
 .header {
 
     &__top {
+        padding: 4px 0;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -71,7 +72,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 10px 0;
+        padding: 14px 0;
         background-color: $main-900;
 
         &::before {

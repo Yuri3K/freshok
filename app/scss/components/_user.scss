@@ -1,8 +1,9 @@
 .user {
     display: flex;
     align-items: center;
-    margin-right: 20px;
-    
+    width: 12%;
+    margin: 0 7px 0 21px;
+
     &__item:not(:last-child) {
         margin-right: 33px;
     }

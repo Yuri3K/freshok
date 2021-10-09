@@ -7,6 +7,16 @@ $(function () {
     $('.hotdeal').slick({
         prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span></button>',
         nextArrow: '<button class="slick-arrow--next" type="button"><span class="sr-only">Следующий слайд</span></button>',
+
+        responsive: [
+            {
+                breakpoint: 1550,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                }
+            },
+        ]
     });
 
     $('.sponsors__list').slick({
