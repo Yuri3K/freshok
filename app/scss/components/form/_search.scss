@@ -46,3 +46,18 @@
         }
     }
 }
+
+
+
+@media (max-width: 1200px) {
+    .search {
+        width: 500px;
+        margin: 0 auto;
+        order: 3;
+        max-width: 48%;
+
+        &__label {
+            margin-right: 0;
+        }
+    }
+}

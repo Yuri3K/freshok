@@ -1,0 +1,13 @@
+.favour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 47px;
+}
+
+
+@media (max-width: 1200px) {
+    .favour {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

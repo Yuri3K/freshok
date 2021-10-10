@@ -2,13 +2,39 @@
     display: flex;
     justify-content: center;
     font-size: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .slick-active {
+        button {
+            background-color: $main-900;
+            border-radius: 50%;
+            border: 2px solid $main-900;
+
+            &:hover {
+                background-color: $main-1000;
+                border: 2px solid $main-1000;
+            }
+
+            &:focus {
+                transform: scale(1.5);
+            }
+
+            &:active {
+                background-color: $dark-1000;
+            }
+        }
+    }
 
     & button {
         position: relative;
         width: 20px;
         height: 20px;
-        background-color: $secondary-100;
+        background-color: $bright-1000;
         border-radius: 50%;
+        border: 2px solid $secondary-600;
         transition: background-color 0.5s, transform 0.5s;
 
         &::before {
@@ -19,20 +45,11 @@
             padding: 30px;
         }
 
-        &:hover {
-            background-color: $bright-800;
-        }
-
-        &:focus {
-            transform: scale(1.5);
-        }
-
-        &:active {
-            background-color: $dark-1000;
-        }
     }
 
     & li:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 40px;
     }
+
+    
 }

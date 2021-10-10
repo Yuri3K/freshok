@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         border-bottom: 1px solid rgba($bright-1000, 0.1);
         padding-left: calc( ( 100vw - 100% ) / 2);
         margin-left: calc(( 100% - 100vw ) / 2);
@@ -32,11 +33,21 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         max-width: 610px;
-        min-height: 140px
+        min-height: 140px;
+
+        &--address {
+            margin: 0 auto;
+            display: block;
+            min-height: 20px;
+        }
     }
 
     &__item {
         width: 33.333%;
+
+        &--address {
+            width: 100%;
+        }
     }
 
     &__link {
@@ -59,3 +70,14 @@
         margin-bottom: 0;
     }
 }
+
+
+@media (max-width: 1200px) {
+    .footer {
+        &__address {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}  

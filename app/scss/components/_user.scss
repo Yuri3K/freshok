@@ -21,3 +21,13 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) {
+    .user {
+        order: 2;
+        justify-content: center;
+        width: 50%;
+        margin: 0;
+    }
+}

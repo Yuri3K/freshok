@@ -57,7 +57,7 @@
         position: absolute;
         width: calc( 100% - 15px );
         opacity: 0;
-        left: -200vw;
+        left: -2000px;
         transition: opacity 0.5s;
         z-index: 1;
 
@@ -95,6 +95,29 @@
 
         &:active {
             letter-spacing: 2px;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .catalog {
+        order: 4;
+        width: 50%;
+
+        &__btn {
+            margin: 0 auto;
+        }
+
+        &__sublist {
+            width: 240px;
+
+            &.show {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            // transition: opacity 0.5s;
         }
     }
 }
