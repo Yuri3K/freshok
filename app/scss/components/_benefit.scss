@@ -32,8 +32,13 @@
     }
 }   
 
-// @media (max-width: 1200px) {
-//     .benefit {
-//         grid-template-columns: 1fr 1fr 1fr;
-//     }
-// }
+@media (max-width: 992px) {
+    .benefit {
+        min-height: 225px;
+
+        &__offer {
+            max-width: 100%;
+            font-size: 22px;
+        }
+    }
+}

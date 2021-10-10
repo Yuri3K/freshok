@@ -11,3 +11,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+@media (max-width: 992px) {
+    .favour {
+        grid-template-columns: 1fr 1fr;
+
+        &__item {
+            margin: 0 auto;
+        }
+    }
+}

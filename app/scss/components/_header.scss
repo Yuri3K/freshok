@@ -92,11 +92,7 @@
     .header {
         &__main {
             .logo {
-                width: 50%;
-
-                &__img {
-                    margin: 0 auto;
-                }
+                width: 27%;
             }
         }
     }
@@ -104,8 +100,16 @@
 
 @media (max-width: 992px) {
     .header {
-        &__top {
+        &__link--delivery,
+        &__link--call {
+            font-size: 0;
+            padding: 0;
+            margin-right: 30px;
+        }
 
+        &__link--delivery::before,
+        &__link--call::before {
+            top: -15px;
         }
     }
 }

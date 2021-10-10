@@ -25,6 +25,12 @@
         font-size: 12px;
         flex-shrink: 0;
         background-color: $main-900;
-        @extend %conditions-button
+        @extend %conditions-button;
     }
 }
+
+// @media (max-width: 992px) {
+//     .email {
+//         width: 50%;
+//     }
+// }

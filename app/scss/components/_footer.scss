@@ -2,13 +2,9 @@
     background-color: $dark-800;
     padding: 30px 0 25px;
     color: $bright-1000;
+    // фываыфвафыв
 
-    .logo {
-        display: inline-block;
-        margin-bottom: 26px;
-    }
-
-    &__main {
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -19,6 +15,27 @@
         padding-right: calc(( 100vw - 100% ) / 2);
         margin-right: calc(( 100% - 100vw ) / 2);
     }
+
+    &__logo {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    // &__main {
+    //     // display: flex;
+    //     // justify-content: space-between;
+    //     // align-items: flex-start;
+    //     // flex-wrap: wrap;
+    //     // border-bottom: 1px solid rgba($bright-1000, 0.1);
+    //     // padding-left: calc( ( 100vw - 100% ) / 2);
+    //     // margin-left: calc(( 100% - 100vw ) / 2);
+    //     // padding-right: calc(( 100vw - 100% ) / 2);
+    //     // margin-right: calc(( 100% - 100vw ) / 2);
+    // }
 
     &__subscribe {
         flex-grow: 1;
@@ -51,7 +68,8 @@
     }
 
     &__link {
-        display: block;
+        display: inline-block;
+        padding: 0 5px;
         color: inherit;
         margin-bottom: 18px;
         font-style: normal;
@@ -72,12 +90,74 @@
 }
 
 
+// @media (max-width: 1200px) {
+//     .footer {
+//         &__address {
+//             width: 100%;
+//             text-align: center;
+//             margin-top: 20px;
+//         }
+//     }
+// }
+
 @media (max-width: 1200px) {
     .footer {
+
+        &__top {
+            justify-content: center;
+        }
+
+        &__logo {
+            width: 27%;
+        }
+
+        &__subscribe {
+            width: 42%;
+        }
+
         &__address {
-            width: 100%;
+            width: 30%;
+            order: 3;
+            margin-top: 0;
+        }
+
+        &__menu {
+            width: 50%;
             text-align: center;
-            margin-top: 20px;
+            order: 4;
+
+            &--top {
+                margin-top: 30px;
+            }
+        }
+
+        &__link {
+            padding: 13px 5px;
+            margin-bottom: 0;
         }
     }
-}  
+}
+
+@media (max-width: 992px) {
+    .footer {
+
+        &__logo {
+            width: 50%;
+        }
+
+        &__menu {
+            width: 65%;
+            text-align: left;
+            order: 3;
+        }
+
+        &__address {
+            width: 33%;
+            order: 4;
+
+            &--top {
+                margin-top: 30px;
+            }
+        }
+    }
+}

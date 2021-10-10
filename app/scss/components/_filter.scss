@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 47px;
+    margin-bottom: 29px;
     
     &__box:not(:last-child) {
         margin-right: 17px;
     }
 
     &__button {
+        padding: 10px 6px;
         font-weight: 700;
         font-size: 15px;
         text-transform: uppercase;

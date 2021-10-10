@@ -24,3 +24,9 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
