@@ -25,42 +25,10 @@ $bright-200: #a12e5e;
     background-position: center;
 }
 
-%line {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc((100vw - 100%) / -2);
-    right: calc((100vw - 100%) / -2);
-    height: 100%;
-    background-color: inherit;
-    z-index: -1;
-}
-
 %tr-y {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
-
-%user-pos {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    background-color: $bright-1000;
-    border-radius: 50%;
-    top:-8px;
-    left: -5px;
-    text-align: center;
-    line-height: 1.8;
-}
-
-%user-after {
-    content: '';
-    position: absolute;
-    padding: 25px;
-    top: -10px;
-    left: -10px;
-    border-radius: 3px;
 }
 
 %conditions-button {
@@ -96,13 +64,13 @@ $bright-200: #a12e5e;
     }
 }
 
-%conditions-ico {
+%conditions-picture {
     transition: all 0.5s;
 
     &:hover::after {
         transition: all 0.5s;
-        background-color: $bright-1000;
         opacity: 0.1;
+        background-color: $bright-1000;
     }
 
     &:focus {

@@ -5,17 +5,11 @@
         display: grid;
         grid-template-columns: minmax(500px, 630px) 300px 300px;
         grid-column-gap: 30px;
-    }
-}
 
-
- @media (max-width: 1200px) {
-    .banner {
-        &__list{
+        @media (max-width: 1200px) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-gap: 30px;
         }
-
     }
 }

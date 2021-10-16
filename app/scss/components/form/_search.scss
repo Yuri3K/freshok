@@ -1,51 +1,47 @@
-.search {
-    flex-shrink: 1;
-    max-width: 45%;
-    width: 576px;
-    height: 50px;
-    margin: 15px 15px 15px 0;
+// .search {
+    // width: 576px;
+    // flex-shrink: 1;
+    // max-width: 45%;
+    // height: 50px;
+    // margin: 15px 8px 15px 0;
     
 
-    .form__label {
-        position: relative;
-        width: 100%;
-        cursor: pointer;
+    // &__picture {
+        // fill: $dark-800;
+        // @extend %tr-y;
+        // left: 12px;
+        // width: 20px;
+    // }
 
-        &::before {
-            content: "";
-            @extend %tr-y;
-            left: 12px;
-            width: 20px;
-            height: 20px;
-            background-image: url('../images/search.svg');
-            @extend %bg;
-        }
-    }
+    // .form__label {
+        // position: relative;
+        // cursor: pointer;
+    // }
 
-    .form__field {
-        width: 100%;
-        padding: 0 10px 0 50px;
-    }
+    // .form__field {
+        // width: 100%;
+        // padding: 0 10px 0 50px;
+    // }
 
-    .form__button {
-        font-weight: 600;
-        background-color: $dark-800;
-        padding: 15px;
+    // .form__button {
+        // font-weight: 600;
+        // background-color: $dark-800;
+        // padding: 15px;
 
-        &:hover {
-            background-color: rgba($dark-800, 0.85);
-        }
+//         &:hover {
+//             background-color: rgba($dark-800, 0.85);
+//         }
 
-        &:focus {
-            position: relative;
-            box-shadow: 0px 0px 0px 4px rgba($bright-1000, 0.5);
-        }
+//         &:focus {
+//             position: relative;
+//             box-shadow: 0px 0px 0px 4px rgba($bright-1000, 0.5);
+//         }
 
-        &:active {
-            color: rgba($bright-1000, 0.5);
-        }
-    }
-}
+//         &:active {
+//             color: rgba($bright-1000, 0.5);
+//         }
+//     }
+// }
 
 
 
@@ -53,11 +49,18 @@
     .search {
         width: 500px;
         margin: 15px auto;
-        order: 4;
-        max-width: 100%;
+        order: 2;
+        max-width: 57%;
 
         &__label {
             margin-right: 0;
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .search {
+        order: 4;
+        max-width: 100%;
     }
 }

@@ -9,6 +9,7 @@
     border-radius: 6px;
     background-color: rgba($bright-1000, 0.8);
     transition: all 0.5s;
+    fill: $dark-500;
 
     &--prev {
         left: 3%;
@@ -18,25 +19,8 @@
         right: 3%;
     }
 
-    &--prev::after, &--next::after {
-        content: '';
-        position: absolute;
-        top: 12px;
-        left: 18px;
-        width: 19px;
-        height: 32px;
-        @extend %bg;
-    }
-
-    &--prev::after {
-        background-image: url('../images/slick-arrows/arrow-left.svg');
-    }
-
-    &--next::after {
-        background-image: url('../images/slick-arrows/arrow-right.svg');
-    }
-
     &:hover {
+        fill: $main-900;
         background-color: $main-200;
     }
 

@@ -1,12 +1,28 @@
 .products {
-    padding: 72px 0;
+    padding: 75px 0;
     text-align: center;
 
     &__title {
-        margin-bottom: 32px;
+        margin-bottom: 21px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 47px;
+        
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__button {
+        color: $main-900;
         background-color:$bright-1000;
         border: 1px solid $main-900;
 

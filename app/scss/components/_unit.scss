@@ -1,24 +1,60 @@
 .unit {
     position: relative;
-    padding: 57px 0 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0 15px;
     max-width: 300px;
-    min-height: 409px;
+    height: 409px;
     border: 1px solid rgba($dark-950, 0.2);
     border-radius: 6px;
+    text-align: left;
+
+    @media (max-width: 992px) {
+        margin: 0 auto;
+    }
 
     &:hover {
         border: 1px solid $main-900;
     }
 
-    &__like {
+    &__badge {
         position: absolute;
-        top: 17px;
-        right: 10px;
-        @extend %conditions-ico;
-        background-image: url('../images/icon-heart-grey.svg');
+        top: 12px;
+        left: 12px;
+    }
 
-        &:hover {
-            background-image: url('../images/icon-heart-yellow.svg');
+    &__link {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($dark-1000, 0.1);
+            opacity: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            background-color: $bright-1000;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        &:hover::before,
+        &:hover::after,
+        &:hover .unit__picture--learn {
+            opacity: 1;
+            transition: opacity 0.5s;
         }
     }
 
@@ -27,31 +63,102 @@
         object-position: center;
         margin: 0 auto;
         max-height: 215px;
-        margin-bottom: 18px;
+        margin-bottom: 19px;
     }
 
-    &__bottom {
-        padding: 0 18px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 105px;
+    &__like {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        right: 5px;
+        @extend %conditions-picture;
     }
 
+    &__picture {
+        position: absolute;
+
+        &--heart {
+            transition: fill 0.5s;
+            fill: $secondary-600;
+            top: 11px;
+            right: 7px;
+
+            &:hover {
+                fill: $bright-800;
+            }
+
+            &:focus {
+                transform: scale(1.2);
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
+        }
+
+        &--pocket {
+            top: 8px;
+            left: 8px;
+            fill: $bright-1000;
+        }
+
+        &--learn {
+            fill: $main-900;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+
+    &__name {
+        display: block;
+        padding: 0 17px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.4;
+        color: $dark-900;
+        margin-bottom: 10px;
+        letter-spacing: 0.03em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        flex-grow: 1;
+    }
 
     &__buy {
         display: flex;
+        max-height: 81px;
         justify-content: space-between;
+        padding: 0 17px;
         align-items: flex-end;
         letter-spacing: 1px;
         line-height: 1;
+        margin-top: auto;
     }
 
     &__cart {
+        position: relative;
         border-radius: 3px;
-        margin-bottom: 5px;
         background-color: $main-900;
-        background-size: 16px;
+        width: 32px;
+        height: 32px;
         @extend %conditions-button;
+    }
+
+    &__rating {
+        position: absolute;
+        display: flex;
+        right: 8px;
+        bottom: 11px;
+    }
+
+    &__text {
+        font-weight: 700;
+        line-height: 1;
     }
 }

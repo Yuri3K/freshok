@@ -8,27 +8,23 @@
     &__link {
         position: relative;
         display: block;
-        @extend %bg;
-        background-size: contain;
-        height: 29px;
-        @extend %conditions-ico;
-    }
-
-    &__link--visa {
-        width: 93px;
-        background-image: url('../../images/pay/visa.svg');
+        fill: $bright-1000;
+        @extend %conditions-picture;
 
         &:after {
-            @extend %user-after;
+        content: '';
+        position: absolute;
+        padding: 25px;
+        top: -10px;
+        left: -10px;
+        border-radius: 3px;
+        }
+
+        &--visa::after {
             padding: 25px 58px;
         }
-    }
-    &__link--mastercard {
-        width: 49px;
-        background-image: url('../../images/pay/mastercard.svg');
 
-        &:after {
-            @extend %user-after;
+        &--mastercard::after {
             padding: 25px 35px;
         }
     }

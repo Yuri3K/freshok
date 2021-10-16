@@ -1,6 +1,7 @@
 .social {
     display: inline-flex;
     flex-wrap: wrap;
+    max-width: 220px;
 
     &__item:not(:last-child) {
         margin-right: 18px;
@@ -9,30 +10,16 @@
     &__link {
         position: relative;
         display: block;
-        width: 32px;
-        height: 32px;
-        @extend %bg;
-        background-size: contain;
-        @extend %conditions-ico;
+        fill: $bright-1000;
+        @extend %conditions-picture;
 
         &:after {
-            @extend %user-after;
+        content: '';
+        position: absolute;
+        padding: 25px;
+        top: -10px;
+        left: -10px;
+        border-radius: 3px;
         }
-    }
-
-    &__link--facebook {
-        background-image: url('../../images/social/facebook.svg');
-    }
-
-    &__link--youtube {
-        background-image: url('../../images/social/youtube.svg');
-    }
-    
-    &__link--telegram {
-        background-image: url('../../images/social/telegram.svg');
-    }
-    
-    &__link--instagram {
-        background-image: url('../images/social/instagram.svg');
     }
 }

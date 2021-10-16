@@ -5,14 +5,10 @@
 @import 'global';
 
 @import 'components/header';
+@import 'components/buttons/burger';
 @import 'components/form/form';
-@import 'components/form/search';
-@import 'components/form/email';
 @import 'components/catalog';
 @import 'components/user';
-@import 'components/buttons/man';
-@import 'components/buttons/like';
-@import 'components/buttons/cart';
 @import 'components/hotdeal/hotdeal';
 @import 'components/hotdeal/arrows';
 @import 'components/hotdeal/dots';
@@ -20,11 +16,11 @@
 @import 'components/filter';
 @import 'components/products';
 @import 'components/badge';
+@import 'components/quantity';
 @import 'components/price';
 @import 'components/unit';
-@import 'components/unit-mini';
-@import 'components/favour';
 @import 'components/stock';
+@import 'components/order';
 @import 'components/banner';
 @import 'components/benefit';
 @import 'components/go-to';
@@ -34,3 +30,5 @@
 @import 'components/footer';
 @import 'components/pay';
 @import 'components/social';
+
+

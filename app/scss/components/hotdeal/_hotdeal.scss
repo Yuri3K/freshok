@@ -5,6 +5,10 @@
         position: relative;
         @extend %bg;
         min-height: 600px;
+
+        @media (max-width: 992px) {
+            min-height: 450px;
+        }
     }
 
     &__inbox {
@@ -18,28 +22,42 @@
         max-width: 1290px;
     }
 
-    &__title {
-        font-family: 'Ruda-Bold', sans-serif;
-        font-weight: 700;
+    &__title,
+    &__stock,
+    &__text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    &__title,
+    &__stock {
+        font-family: 'Ruda', sans-serif;
+        font-weight: 900;
         width: 75%;
         font-size: 60px;
         line-height: 1.3;
         color: $dark-500;
         text-transform: uppercase;
-        margin-bottom: 12px;
-        letter-spacing: -2.5px;
+        letter-spacing: 0;
+
+        @media (max-width: 992px) {
+            width: 100%;
+            font-size: 44px;
+        }
     }
 
     &__stock {
-        display: block;
-        margin-bottom: 12px;
+        margin-bottom: 6px;
         color: $bright-300;
-        letter-spacing: -1px;
     }
     
     &__text {
         font-size: 16px;
-        margin-bottom: 32px;
+        margin-bottom: 35px;
+        letter-spacing: 0;
     }
 
     &__button {
@@ -47,19 +65,5 @@
         color: $bright-1000;
         background-color: $main-900;
         @extend %conditions-button;
-    }
-}
-
-
-@media (max-width: 992px) {
-    .hotdeal {
-        &__wrapper {
-            min-height: 450px;
-        }
-
-        &__title {
-            width: 100%;
-            font-size: 44px;
-        }
     }
 }
