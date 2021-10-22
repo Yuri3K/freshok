@@ -4,48 +4,106 @@
     justify-content: flex-end;
     margin-left: 15px;
 
-    @media (max-width: 1200px) {
-        order: 3;
-        margin: 0;
+    .vector-btn {
+        @extend %conditions-vector;
     }
 
     &__item {
-        margin: 10px 0 10px 11px;
+        margin: 10px 5px;
+
+        &--man {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--like {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--search {
+            display: none;
+            @media (max-width: 1200px) {
+                display: block;
+            }
+        }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 11px;
+    &__item:last-child {
+        margin-right: 0;
     }
 
-    &__item:nth-child(n+4) {
+    &__item:nth-child(n+5) {
         display: none;
     }
     
-    &__btn {
-        position: relative;
-        padding: 5px;
-        display: block;
-        fill: $bright-1000;
-        @extend %conditions-picture;
+    // &__btn {
+    //     position: relative;
+    //     width: 50px;
+    //     height: 50px;
+    //     border-radius: 3px;
+    //     fill: $bright-1000;
+    //     @extend %conditions-vector;
 
-        &:after {
-        content: '';
-        position: absolute;
-        padding: 25px;
-        top: -10px;
-        border-radius: 3px;
-        }
+    //     &:hover {
+    //     transition: all 0.5s;
+    //     background-color: rgba($bright-1000, 0.1);
+    //     }
 
-        &--man::after {
-            left: -7px
-        }
+        // &--man {
+        //     @media (max-width: 768px) {
+        //         display: none;
+        //     }
 
-        &--like::after {
-            left: -3px;
-        }
+            // &::after {
+            //     left: -7px;
+            // }
+        // }
 
-        &--cart::after {
-            left: -2px;
-        }
-    }
+        // &--like {
+        //     @media (max-width: 768px) {
+        //         display: none;
+        //     }
+
+            // &::after {
+            //     left: -3px;
+            // }
+        // }
+
+        // &--search {
+        //     display: none;
+        //     margin: 0;
+
+        //     @media (max-width: 768px) {
+        //         display: block;
+        //     }
+
+            // &::after {
+            //     left: -3px;
+            // }
+        // }
+
+        // &:after {
+        // content: '';
+        // position: absolute;
+        // padding: 25px;
+        // top: -10px;
+        // border-radius: 3px;
+        // }
+
+        // &--man::after {
+        //     left: -7px;
+        // }
+
+        // &--like::after {
+        //     left: -3px;
+        // }
+
+        // &--cart::after {
+        //     left: -2px;
+        // }
+
+    // }
 }

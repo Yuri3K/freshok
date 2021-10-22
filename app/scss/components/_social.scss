@@ -2,24 +2,43 @@
     display: inline-flex;
     flex-wrap: wrap;
     max-width: 220px;
+    margin-top: -7px;
 
     &__item:not(:last-child) {
-        margin-right: 18px;
+        margin-right: 2px;
     }
 
-    &__link {
-        position: relative;
-        display: block;
-        fill: $bright-1000;
-        @extend %conditions-picture;
+    // &__link {
+    //     position: relative;
+    //     display: block;
+    //     fill: $bright-1000;
+    //     @extend %conditions-vector;
 
-        &:after {
-        content: '';
+    //     &:after {
+    //     content: '';
+    //     position: absolute;
+    //     padding: 25px;
+    //     top: -10px;
+    //     left: -10px;
+    //     border-radius: 3px;
+    //     }
+
+    //     &:hover {
+    //         background-color: rgba($bright-1000, 0);
+    //         fill: $main-1000;
+    //     }
+    // }
+
+    &__vector-btn {
+        width: 44px;
+        height: 44px;
+        @extend %conditions-vector;
+    }
+
+    &__vector {
         position: absolute;
-        padding: 25px;
-        top: -10px;
-        left: -10px;
-        border-radius: 3px;
-        }
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }

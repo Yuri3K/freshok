@@ -5,9 +5,7 @@
     margin-left: auto;
     margin-right: 24px;
 
-    &__btn {
-        position: relative;
-        border-radius: 3px;
+    &__vector-btn {
         background-color: $main-900;
         width: 24px;
         height: 24px;
@@ -22,7 +20,7 @@
         }
     }
 
-    &__picture {
+    &__vector {
         fill: $bright-1000;
         position: absolute;
         left: 4px;
@@ -35,6 +33,7 @@
     }
 
     &__numeric {
+        position: relative;
         width: 50px;
     }
 

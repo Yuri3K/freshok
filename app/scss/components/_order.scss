@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 476px;
     height: 100vh;
-    z-index: 10;
+    z-index: 2;
     display: none;
 
     &::before {
@@ -40,15 +40,13 @@
         color: $dark-1000;
     }
 
-    &__btn {
-        position: relative;
+    &__btn {  
         transition: background-color 0.3s;
         @extend %conditions-button;
 
         &--close {
             width: 50px;
             height: 50px;
-            text-align: right;
             grid-row: span 2;
         }
 
@@ -66,21 +64,12 @@
         }
     }
 
-    &__picture {
-        position: absolute;
-        z-index: 1;
+    &__cross {
+        fill: $dark-800;
+    }
 
-        &--cross {
-            fill: $dark-800;
-            left: 14px;
-            top: 12px;
-        }
-
-        &--cross-mini {
-            fill: $secondary-600;
-            left: 6px;
-            top: 6px;
-        }
+    &__cross-mini {
+        fill: $secondary-600;
     }
     
     &__clean {
@@ -88,7 +77,6 @@
         font-weight: 300;
         font-size: 14px;
         text-align: left;
-
     }
 
     &__body {
@@ -102,6 +90,7 @@
     }
 
     &__unit {
+        position: relative;
         justify-content: center;
         max-width: 450px;
         height: 84px;

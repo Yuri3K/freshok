@@ -62,8 +62,6 @@
 
     &__button {
         display: inline-block;
-        color: $bright-1000;
-        background-color: $main-900;
         @extend %conditions-button;
     }
 }

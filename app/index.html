@@ -19,12 +19,211 @@
 <body>
 
     <header class="header">
+        <div class="mob-menu">
+            <div class="mob-menu__firstline">
+                <a class="mob-menu__logo" href="#">
+                    <img class="mob-menu__img" src="images/logo-mobil.svg" alt="Логотип" width="200" height="60">
+                </a>
+                <button class="vector-btn mob-menu__vector-btn">
+                    <svg class="mob-menu--close" width="18" height="18">
+                        <use xlink:href="images/images.svg#cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu__user">
+                <button class="button mob-menu__button">
+                    <svg class="mob-menu--man" width="25" height="32">
+                        <use xlink:href="images/images.svg#user"></use>
+                    </svg>
+                    <span class="mob-menu__enter">Вход</span>
+                </button>
+                <span class="mob-menu__line"></span>
+                <button class="button mob-menu__button">
+                    Регистрация
+                </button>
+            </div>
+            <div class="mob-menu__catalog">
+                <button class="mob-menu__drop-down" type="button">
+                    <svg class="mob-menu__vector mob-menu__vector--burger" width="26" height="17">
+                        <use xlink:href="images/images.svg#buger"></use>
+                    </svg>
+                    Каталог товаров
+                </button>
 
-        <!-- <div class="mob-menu">
-            <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
-            </a>
-        </div> -->
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Овощи и фрукты
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Бакалея
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Молочные продукты
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Хлеб
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Мясо
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Колбаса
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Рыба
+                        </a>
+                    </li>
+                    <li class="mob-menu__subitem">
+                        <a class="mob-menu__link" href="#">
+                            Алкоголь
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Напитки
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Торты
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Мясо
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="#">
+                            Чай, кофе
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <ul class="mob-menu__address">
+                <li class="mob-menu__contacts">
+
+                    <a class="mob-menu__hotline" href="tel:+7907288365">
+                        <svg class="mob-menu__vector mob-menu__vector--call" width="23" height="23">
+                            <use xlink:href="images/images.svg#call"></use>
+                        </svg>
+                        +7 907 288 365
+                    </a>
+                </li>
+
+                <li class="mob-menu__contacts">
+                    <a class="mob-menu__place" href="#">
+                        <svg class="mob-menu__vector mob-menu__vector--point" width="31" height="43">
+                            <use xlink:href="images/images.svg#point"></use>
+                        </svg>
+                        Санкт-Петербург, ул. Ленина, 1
+                    </a>
+                </li>
+
+                <li class="mob-menu__contacts">
+                    <ul class="mob-menu__social">
+                        <li class="mob-menu__icons">
+                            <a class="mob-menu__btn" href="https://uk-ua.facebook.com/">
+                                <span class="sr-only">
+                                    Перейти в Фейсбук
+                                </span>
+                                <svg class="mob-menu__vector" width="32" height="32">
+                                    <use xlink:href="images/images.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-menu__icons">
+                            <a class="mob-menu__btn" href="https://www.youtube.com/">
+                                <span class="sr-only">
+                                    Перейти в Ютюб
+                                </span>
+                                <svg class="mob-menu__vector" width="32" height="32">
+                                    <use xlink:href="images/images.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="mob-menu__icons">
+                            <a class="mob-menu__btn" href="https://web.telegram.org/z/">
+                                <span class="sr-only">
+                                    Перейти в Телеграм
+                                </span>
+                                <svg class="mob-menu__vector" width="32" height="32">
+                                    <use xlink:href="images/images.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-menu__icons">
+                            <a class="mob-menu__btn" href="https://www.instagram.com/?hl=ru">
+                                <span class="sr-only">
+                                    Перейти в Инстаграм
+                                </span>
+                                <svg class="mob-menu__vector" width="32" height="32">
+                                    <use xlink:href="images/images.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mob-menu__nav">
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Доставка
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        О нас
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Новости
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Контакты
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Акции
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Вакансии
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Отзывы
+                    </a>
+                </li>
+                <li class="mob-menu__navitem">
+                    <a class="mob-menu__navlink" href="#">
+                        Публичная оферта
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <div class="container">
             <nav class="nav">
@@ -37,19 +236,19 @@
                     </button>
 
                     <li class="header__item header__item--delivery">
-                        <svg class="header__picture" width="32" height="23">
-                            <use xlink:href="images/images.svg#delivery"></use>
-                        </svg>
                         <a class="header__link" href="#">
+                            <svg class="header__vector" width="32" height="23">
+                                <use xlink:href="images/images.svg#delivery"></use>
+                            </svg>
                             адрес и время доствки
                         </a>
                     </li>
 
                     <li class="header__item header__item--call">
-                        <svg class="header__picture" width="23" height="23">
-                            <use xlink:href="images/images.svg#call"></use>
-                        </svg>
                         <a class="header__link" href="tel:+380501111111">
+                            <svg class="header__vector" width="23" height="23">
+                                <use xlink:href="images/images.svg#call"></use>
+                            </svg>
                             горячая линия 24/7
                         </a>
                     </li>
@@ -81,11 +280,11 @@
 
                     <div class="catalog">
                         <button class="catalog__btn" type="button">
-                            <svg class="catalog__picture catalog__picture--burger" width="26" height="17">
+                            <svg class="catalog__vector catalog__vector--burger" width="26" height="17">
                                 <use xlink:href="images/images.svg#buger"></use>
                             </svg>
                             Каталог продуктов
-                            <svg class="catalog__picture catalog__picture--arrow" width="16" height="8">
+                            <svg class="catalog__vector catalog__vector--arrow" width="16" height="8">
                                 <use xlink:href="images/images.svg#arrow-down"></use>
                             </svg>
                         </button>
@@ -159,7 +358,7 @@
                             <span class="sr-only">
                                 Найти в магазине
                             </span>
-                            <svg class="form__picture" width="21" height="20">
+                            <svg class="form__vector" width="21" height="20">
                                 <use xlink:href="images/images.svg#search"></use>
                             </svg>
                             <input class="form__field form__field--search" type="search"
@@ -171,22 +370,32 @@
                     </form>
 
                     <ul class="user">
-                        <li class="user__item">
-                            <button class="user__btn user__btn--man " type="button">
+                        <li class="user__item user__item--search">
+                            <button class="vector-btn user--search" type="button">
+                                <span class="sr-only">
+                                    Найти в магазине
+                                </span>
+                                <svg class="user__vector" width="32" height="29">
+                                    <use xlink:href="images/images.svg#search"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="user__item user__item--man">
+                            <button class="vector-btn" type="button">
                                 <span class="sr-only">
                                     Войти в личный кабинет
                                 </span>
-                                <svg class="user__picture" width="25" height="32">
+                                <svg class="user__vector" width="25" height="32">
                                     <use xlink:href="images/images.svg#user"></use>
                                 </svg>
                             </button>
                         </li>
-                        <li class="user__item">
-                            <button class="user__btn user__btn--like" type="button">
+                        <li class="user__item user__item--like">
+                            <button class="vector-btn" type="button">
                                 <span class="sr-only">
                                     Понравившиеся товары
                                 </span>
-                                <svg class="user__picture" width="32" height="29">
+                                <svg class="user__vector" width="32" height="29">
                                     <use xlink:href="images/images.svg#heart"></use>
                                 </svg>
                                 <span class="counter">
@@ -194,12 +403,12 @@
                                 </span>
                             </button>
                         </li>
-                        <li class="user__item">
-                            <button class="user__btn user__btn--cart" type="button">
+                        <li class="user__item user__item--cart">
+                            <button class="vector-btn user--cart" type="button">
                                 <span class="sr-only">
                                     Оформить заказ
                                 </span>
-                                <svg class="user__picture" width="32" height="31">
+                                <svg class="user__vector" width="32" height="31">
                                     <use xlink:href="images/images.svg#cart"></use>
                                 </svg>
                                 <span class="counter">
@@ -212,7 +421,7 @@
                                     <span class="order__title">Корзина</span>
                                     <button class="order__btn order__btn--close" type="button">
                                         <span class="sr-only">Закрыть корзину</span>
-                                        <svg class="order__picture order__picture--cross" width="24" height="24">
+                                        <svg class="order__cross" width="24" height="24">
                                             <use xlink:href="images/images.svg#cross"></use>
                                         </svg>
                                     </button>
@@ -235,21 +444,18 @@
                                         </span>
 
                                         <ul class="price order__price">
-
                                             <li class="price__cost">
                                                 999<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
 
                                         <form class="quantity order__quantity">
-
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -261,13 +467,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -280,13 +485,13 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
 
                                         </form>
+
                                     </article>
 
 
@@ -311,13 +516,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -329,13 +533,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -348,75 +551,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -445,13 +580,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -463,13 +597,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -482,8 +615,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -512,13 +644,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -530,13 +661,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -549,8 +679,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -579,13 +708,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -597,13 +725,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -616,8 +743,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -646,13 +772,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -664,13 +789,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -683,8 +807,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -713,13 +836,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -731,13 +853,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -750,8 +871,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -780,13 +900,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -798,13 +917,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -817,8 +935,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -847,13 +964,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -865,13 +981,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -884,8 +999,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -914,13 +1028,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -932,13 +1045,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -951,8 +1063,7 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -981,13 +1092,12 @@
 
                                         <form class="quantity order__quantity">
 
-                                            <button class="quantity__btn quantity__btn--minus" type="button"
-                                                data-direction="minus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
                                                 <span class="sr-only">
                                                     Уменьшить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#minus"></use>
                                                 </svg>
                                             </button>
@@ -999,13 +1109,12 @@
                                             </label>
 
 
-                                            <button class="quantity__btn quantity__btn--plus" type="button"
-                                                data-direction="plus">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
                                                 <span class="sr-only">
                                                     Увеличить количество
                                                 </span>
-                                                <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                    height="16">
+                                                <svg class="quantity__vector" width="16" height="16">
                                                     <use xlink:href="images/images.svg#plusik"></use>
                                                 </svg>
                                             </button>
@@ -1018,8 +1127,71 @@
                                                 <span class="sr-only">
                                                     Удалить карту товара
                                                 </span>
-                                                <svg class="order__picture order__picture--cross-mini" width="12"
-                                                    height="12">
+                                                <svg class="order__cross-mini" width="12" height="12">
+                                                    <use xlink:href="images/images.svg#cross"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </article>
+
+
+
+                                    <article class="order__unit unit">
+
+                                        <a class="unit__link order__link" href="#">
+                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
+                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                        </a>
+
+                                        <span class="unit__name order__name">
+                                            Питохайя красная с белой мякотью, 1шт
+                                        </span>
+
+                                        <ul class="price order__price">
+
+                                            <li class="price__cost">
+                                                1019<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity order__quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric order__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                            <span class="order__total">
+                                                2038<span class="price__index"><span class="currency">₽</span></span>
+                                            </span>
+
+                                            <button class="order__btn order__btn--delete" type="button">
+                                                <span class="sr-only">
+                                                    Удалить карту товара
+                                                </span>
+                                                <svg class="order__cross-mini" width="12" height="12">
                                                     <use xlink:href="images/images.svg#cross"></use>
                                                 </svg>
                                             </button>
@@ -1116,7 +1288,7 @@
             <div class="container">
                 <ul class="advantages__list">
                     <li class="advantages__item advantages__item--scooter">
-                        <svg class="advantages__picture" width="50" height="50">
+                        <svg class="advantages__vector" width="50" height="50">
                             <use xlink:href="images/images.svg#scooter"></use>
                         </svg>
                         <span class="advantages__service">
@@ -1127,7 +1299,7 @@
                         </span>
                     </li>
                     <li class="advantages__item advantages__item--return">
-                        <svg class="advantages__picture" width="50" height="50">
+                        <svg class="advantages__vector" width="50" height="50">
                             <use xlink:href="images/images.svg#return"></use>
                         </svg>
                         <span class="advantages__service">
@@ -1138,7 +1310,7 @@
                         </span>
                     </li>
                     <li class="advantages__item advantages__item--hours">
-                        <svg class="advantages__picture" width="50" height="50">
+                        <svg class="advantages__vector" width="50" height="50">
                             <use xlink:href="images/images.svg#hours"></use>
                         </svg>
                         <span class="advantages__service">
@@ -1189,23 +1361,30 @@
                     <ul class="products__list">
                         <li class="products__item mix category-fruits">
                             <article class="unit">
-
-                                <ul class="unit__badge badge">
-
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--discount" href="#">
-                                            -50%
-                                        </a>
-                                    </li>
-                                </ul>
-
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/pineapple.jpg" alt="Ананас" width="298"
@@ -1219,6 +1398,9 @@
                                 <div class="unit__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             1999 <span class="currency">₽</span>
                                         </li>
 
@@ -1229,50 +1411,43 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
 
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
+                                        <label class="quantity__numeric">
+                                            <span class="sr-only">
+                                                Введите количество
+                                            </span>
                                             <input class="quantity__number" type="number" name="numeric" value="1"
                                                 min="1">
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1281,9 +1456,16 @@
                         </li>
                         <li class="products__item mix category-fruits">
                             <article class="unit">
-
+                                <button class="vector-btn unit__vector-btn" type="button">
+                                    <span class="sr-only">
+                                        Отметить понравилось
+                                    </span>
+                                    <svg class="unit--heart" width="32" height="29">
+                                        <use xlink:href="images/images.svg#heart"></use>
+                                    </svg>
+                                </button>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/lemon.jpg" alt="Лимон" width="298"
@@ -1302,13 +1484,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1320,13 +1501,12 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
@@ -1334,36 +1514,40 @@
                                     </form>
 
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
                                 </div>
                             </article>
                         </li>
+
                         <li class="products__item mix category-fruits">
                             <article class="unit">
-                                <ul class="unit__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--hit" href="#">
-                                            Хит
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--hit" href="#">
+                                                Хит
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/drugon-fruit.jpg" alt="Питахайя"
@@ -1381,13 +1565,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1399,32 +1582,24 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1433,15 +1608,25 @@
                         </li>
                         <li class="products__item mix category-vegetables">
                             <article class="unit">
-                                <ul class="unit__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/papric.jpg" alt="Перец оранжевый"
@@ -1459,13 +1644,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1477,32 +1661,24 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1511,15 +1687,25 @@
                         </li>
                         <li class="products__item mix category-vegetables">
                             <article class="unit">
-                                <ul class="unit__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--hit" href="#">
-                                            Хит
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--hit" href="#">
+                                                Хит
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/currot.jpg" alt="Морковь молодая"
@@ -1537,13 +1723,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1555,32 +1740,24 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1589,15 +1766,26 @@
                         </li>
                         <li class="products__item mix category-juices">
                             <article class="unit">
-                                <ul class="unit__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--discount" href="#">
-                                            -30%
-                                        </a>
-                                    </li>
-                                </ul>
+
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -30%
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/juice.jpg" alt="Напиток Sanpellegrino"
@@ -1610,6 +1798,9 @@
                                 <div class="unit__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             299 <span class="currency">₽</span>
                                         </li>
                                         <li class="price__cost">
@@ -1619,13 +1810,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1637,32 +1827,24 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1671,15 +1853,25 @@
                         </li>
                         <li class="products__item mix category-grocery">
                             <article class="unit">
-                                <ul class="unit__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="unit__top">
+                                    <ul class="unit__badge badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="unit--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/coffe.jpg" alt="Кофе с коноплей"
@@ -1697,13 +1889,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1713,34 +1904,22 @@
                                             <input class="quantity__number" type="number" name="numeric" value="1"
                                                 min="1">
                                         </label>
-
-
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
-
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1749,8 +1928,16 @@
                         </li>
                         <li class="products__item mix">
                             <article class="unit">
+                                <button class="vector-btn unit__vector-btn" type="button">
+                                    <span class="sr-only">
+                                        Отметить понравилось
+                                    </span>
+                                    <svg class="unit--heart" width="32" height="29">
+                                        <use xlink:href="images/images.svg#heart"></use>
+                                    </svg>
+                                </button>
                                 <a class="unit__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img" src="images/units/ketchup.jpg" alt="Кетчуп" width="298"
@@ -1768,13 +1955,12 @@
 
                                     <form class="quantity">
 
-                                        <button class="quantity__btn quantity__btn--minus" type="button"
-                                            data-direction="minus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                            type="button" data-direction="minus">
                                             <span class="sr-only">
                                                 Уменьшить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--minus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#minus"></use>
                                             </svg>
                                         </button>
@@ -1786,32 +1972,23 @@
                                         </label>
 
 
-                                        <button class="quantity__btn quantity__btn--plus" type="button"
-                                            data-direction="plus">
+                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                            type="button" data-direction="plus">
                                             <span class="sr-only">
                                                 Увеличить количество
                                             </span>
-                                            <svg class="quantity__picture quantity__picture--plus" width="16"
-                                                height="16">
+                                            <svg class="quantity__vector" width="16" height="16">
                                                 <use xlink:href="images/images.svg#plusik"></use>
                                             </svg>
                                         </button>
 
                                     </form>
 
-                                    <button class="unit__like" type="button">
-                                        <span class="sr-only">
-                                            Отметить понравилось
-                                        </span>
-                                        <svg class="unit__picture unit__picture--heart" width="32" height="29">
-                                            <use xlink:href="images/images.svg#heart"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="unit__cart" type="button">
+                                    <button class="vector-btn unit__vector-btn--cart" type="button">
                                         <span class="sr-only">
                                             Отправить в корзину
                                         </span>
-                                        <svg class="unit__picture unit__picture--pocket" width="16" height="16">
+                                        <svg class="unit--cart" width="16" height="16">
                                             <use xlink:href="images/images.svg#cart"></use>
                                         </svg>
                                     </button>
@@ -1841,7 +2018,6 @@
                                 перейти к покупкам
                             </a>
                         </article>
-
 
                     </li>
                     <li class="banner__item">
@@ -1901,16 +2077,15 @@
                     <ul class="stock__list">
                         <li class="stock__item mix category-new">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--new" href="#">
                                             Новинка
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/pineapple.jpg" alt="Ананас"
@@ -1926,6 +2101,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             1999<span class="currency">₽</span>
                                         </li>
 
@@ -1940,23 +2118,20 @@
                                     <div class="unit__star"></div>
                                 </div>
 
-
-
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--new" href="#">
                                             Новинка
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/coffe.jpg" alt="Кофе"
@@ -1972,6 +2147,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             877<span class="currency">₽</span>
                                         </li>
 
@@ -1993,16 +2171,15 @@
 
                         <li class="stock__item mix category-new">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--new" href="#">
                                             Новинка
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/strawberry.jpg" alt="Клубника"
@@ -2018,6 +2195,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             600<span class="currency">₽</span>
                                         </li>
 
@@ -2026,29 +2206,24 @@
                                         </li>
                                     </ul>
                                 </div>
-
-
                                 <div class="unit__rating">
                                     <div class="unit__text">5.0</div>
                                     <div class="unit__star"></div>
                                 </div>
-
-
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--new" href="#">
                                             Новинка
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/mango.jpg" alt="Манго"
@@ -2064,6 +2239,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             960<span class="currency">₽</span>
                                         </li>
 
@@ -2072,29 +2250,24 @@
                                         </li>
                                     </ul>
                                 </div>
-
-
                                 <div class="unit__rating">
                                     <div class="unit__text">5.0</div>
                                     <div class="unit__star"></div>
                                 </div>
-
-
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--new" href="#">
                                             Новинка
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/salmon.jpg" alt="Лосось"
@@ -2110,6 +2283,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             1199<span class="currency">₽</span>
                                         </li>
 
@@ -2118,8 +2294,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
-
                                 <div class="unit__rating">
                                     <div class="unit__text">4.5</div>
                                     <div class="unit__star"></div>
@@ -2128,20 +2302,17 @@
 
                             </article>
                         </li>
-
-
                         <li class="stock__item mix category-hit">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--hit" href="#">
                                             Хит
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/veg_juice.jpg" alt="Сок овощной"
@@ -2157,6 +2328,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             230<span class="currency">₽</span>
                                         </li>
 
@@ -2165,7 +2339,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
 
                                 <div class="unit__rating">
                                     <div class="unit__text">4.9</div>
@@ -2176,16 +2349,15 @@
 
                         <li class="stock__item mix category-hit">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--hit" href="#">
                                             Хит
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/basket.jpg"
@@ -2201,6 +2373,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             3990<span class="currency">₽</span>
                                         </li>
 
@@ -2222,16 +2397,15 @@
 
                         <li class="stock__item mix category-hit">
                             <article class="unit stock__unit">
-                                <ul class="unit__badge badge">
+                                <ul class="stock__badge badge">
                                     <li class="badge__item">
                                         <a class="badge__link badge__link--hit" href="#">
                                             Хит
                                         </a>
                                     </li>
                                 </ul>
-
                                 <a class="unit__link stock__link" href="#">
-                                    <svg class="unit__picture unit__picture--learn" width="20" height="20">
+                                    <svg class="unit--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
                                     <img class="unit__img stock__img" src="images/units/meat.jpg" alt="Свинина мякоть"
@@ -2247,6 +2421,9 @@
                                 <div class="unit__buy stock__buy">
                                     <ul class="price">
                                         <li class="price__cost price__cost--old">
+                                            <svg class="price__cross" width="20" height="20">
+                                                <use xlink:href="images/images.svg#line"></use>
+                                            </svg>
                                             599<span class="currency">₽</span>
                                         </li>
 
@@ -2256,12 +2433,10 @@
                                     </ul>
                                 </div>
 
-
                                 <div class="unit__rating">
                                     <div class="unit__text">4.6</div>
                                     <div class="unit__star"></div>
                                 </div>
-
 
                             </article>
                         </li>
@@ -2276,7 +2451,7 @@
                 <ul class="sponsors__list">
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="34">
+                            <svg class="sponsors__vector" width="80" height="34">
                                 <use xlink:href="images/images.svg#sprite"></use>
                             </svg>
                         </a>
@@ -2284,7 +2459,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="58">
+                            <svg class="sponsors__vector" width="80" height="58">
                                 <use xlink:href="images/images.svg#dr-pepper"></use>
                             </svg>
                         </a>
@@ -2292,7 +2467,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="27">
+                            <svg class="sponsors__vector" width="80" height="27">
                                 <use xlink:href="images/images.svg#coca-cola"></use>
                             </svg>
                         </a>
@@ -2300,7 +2475,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="31">
+                            <svg class="sponsors__vector" width="80" height="31">
                                 <use xlink:href="images/images.svg#pepsi"></use>
                             </svg>
                         </a>
@@ -2308,7 +2483,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="49">
+                            <svg class="sponsors__vector" width="80" height="49">
                                 <use xlink:href="images/images.svg#redbull"></use>
                             </svg>
                         </a>
@@ -2316,7 +2491,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="59">
+                            <svg class="sponsors__vector" width="80" height="59">
                                 <use xlink:href="images/images.svg#fanta"></use>
                             </svg>
                         </a>
@@ -2324,7 +2499,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="34">
+                            <svg class="sponsors__vector" width="80" height="34">
                                 <use xlink:href="images/images.svg#sprite"></use>
                             </svg>
                         </a>
@@ -2332,7 +2507,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="58">
+                            <svg class="sponsors__vector" width="80" height="58">
                                 <use xlink:href="images/images.svg#dr-pepper"></use>
                             </svg>
                         </a>
@@ -2340,7 +2515,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="27">
+                            <svg class="sponsors__vector" width="80" height="27">
                                 <use xlink:href="images/images.svg#coca-cola"></use>
                             </svg>
                         </a>
@@ -2348,7 +2523,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="31">
+                            <svg class="sponsors__vector" width="80" height="31">
                                 <use xlink:href="images/images.svg#pepsi"></use>
                             </svg>
                         </a>
@@ -2356,7 +2531,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="49">
+                            <svg class="sponsors__vector" width="80" height="49">
                                 <use xlink:href="images/images.svg#redbull"></use>
                             </svg>
                         </a>
@@ -2364,7 +2539,7 @@
 
                     <li class="sponsors__item">
                         <a class="sponsors__link" href="#">
-                            <svg class="sponsors__picture" width="80" height="59">
+                            <svg class="sponsors__vector" width="80" height="59">
                                 <use xlink:href="images/images.svg#fanta"></use>
                             </svg>
                         </a>
@@ -2396,12 +2571,14 @@
                                 <span class="sr-only">Перейти к новости</span>
                                 <img class="event__img" src="images/news/news1.jpg" alt="Клубника" width="410"
                                     height="240">
+                                <p class="event__text">
+                                    Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись,
+                                    пока
+                                    всё
+                                    не разобрали!
+                                </p>
                             </a>
-                            <p class="event__text">
-                                Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока
-                                всё
-                                не разобрали!
-                            </p>
+
                         </article>
                     </li>
 
@@ -2419,10 +2596,11 @@
                                 <span class="sr-only">Перейти к новости</span>
                                 <img class="event__img" src="images/news/news2.jpg" alt="Манго" width="410"
                                     height="240">
+                                <p class="event__text">
+                                    Шикарнейший выбор манго в нашем онлайн-маркете
+                                </p>
                             </a>
-                            <p class="event__text">
-                                Шикарнейший выбор манго в нашем онлайн-маркете
-                            </p>
+
                         </article>
                     </li>
                     <li class="news__item">
@@ -2439,10 +2617,11 @@
                                 <span class="sr-only">Перейти к новости</span>
                                 <img class="event__img" src="images/news/news3.jpg" alt="Папайя" width="410"
                                     height="240">
+                                <p class="event__text">
+                                    Всё, что вы хотели знать о папайя
+                                </p>
                             </a>
-                            <p class="event__text">
-                                Всё, что вы хотели знать о папайя
-                            </p>
+
                         </article>
                     </li>
                 </ul>
@@ -2533,42 +2712,42 @@
                     </ul>
                     <ul class="social">
                         <li class="social__item">
-                            <a class="social__link" href="https://uk-ua.facebook.com/">
+                            <a class="vector-btn social__vector-btn" href="https://uk-ua.facebook.com/">
                                 <span class="sr-only">
                                     Перейти в Фейсбук
                                 </span>
-                                <svg class="cosial__picture" width="32" height="32">
+                                <svg class="social__vector" width="32" height="32">
                                     <use xlink:href="images/images.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+                            <a class="vector-btn social__vector-btn" href="https://www.youtube.com/">
                                 <span class="sr-only">
                                     Перейти в Ютюб
                                 </span>
-                                <svg class="cosial__picture" width="32" height="32">
+                                <svg class="social__vector" width="32" height="32">
                                     <use xlink:href="images/images.svg#youtube"></use>
                                 </svg>
                             </a>
                         </li>
 
                         <li class="social__item">
-                            <a class="social__link" href="https://web.telegram.org/z/">
+                            <a class="vector-btn social__vector-btn" href="https://web.telegram.org/z/">
                                 <span class="sr-only">
                                     Перейти в Телеграм
                                 </span>
-                                <svg class="cosial__picture" width="32" height="32">
+                                <svg class="social__vector" width="32" height="32">
                                     <use xlink:href="images/images.svg#telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="https://www.instagram.com/?hl=ru">
+                            <a class="vector-btn social__vector-btn" href="https://www.instagram.com/?hl=ru">
                                 <span class="sr-only">
                                     Перейти в Инстаграм
                                 </span>
-                                <svg class="cosial__picture" width="32" height="32">
+                                <svg class="social__vector" width="32" height="32">
                                     <use xlink:href="images/images.svg#instagram"></use>
                                 </svg>
                             </a>
@@ -2584,7 +2763,7 @@
                             <span class="sr-only">
                                 Оплатить картой Виза
                             </span>
-                            <svg class="pay__picture" width="93" height="29">
+                            <svg class="pay__vector" width="93" height="29">
                                 <use xlink:href="images/images.svg#visa"></use>
                             </svg>
                         </a>
@@ -2594,7 +2773,7 @@
                             <span class="sr-only">
                                 Оплатить картой Мастеркард
                             </span>
-                            <svg class="pay__picture" width="49" height="29">
+                            <svg class="pay__vector" width="49" height="29">
                                 <use xlink:href="images/images.svg#mastercard"></use>
                             </svg>
                         </a>

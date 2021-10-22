@@ -32,7 +32,6 @@ $bright-200: #a12e5e;
 }
 
 %conditions-button {
-    transition: all 1s;
 
     &:hover {
         background-color: $main-1000;
@@ -56,7 +55,7 @@ $bright-200: #a12e5e;
     }
 
     &:focus {
-        box-shadow: 3px 3px 5px $dark-1000;
+        box-shadow: inset 3px 3px 5px $dark-1000;
     }
 
     &:active {
@@ -64,13 +63,12 @@ $bright-200: #a12e5e;
     }
 }
 
-%conditions-picture {
+%conditions-vector {
     transition: all 0.5s;
 
-    &:hover::after {
+    &:hover {
         transition: all 0.5s;
-        opacity: 0.1;
-        background-color: $bright-1000;
+        background-color: rgba($bright-1000, 0.1);
     }
 
     &:focus {

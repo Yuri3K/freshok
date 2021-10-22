@@ -9,7 +9,7 @@
         position: relative;
         display: block;
         fill: $bright-1000;
-        @extend %conditions-picture;
+        @extend %conditions-vector;
 
         &:after {
         content: '';
@@ -26,6 +26,12 @@
 
         &--mastercard::after {
             padding: 25px 35px;
+            
+        }
+
+        &:hover {
+            background-color: rgba($bright-1000, 0);
+            fill: $main-1000;
         }
     }
 }

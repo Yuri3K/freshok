@@ -10,7 +10,12 @@
         margin: 15px 8px 15px 0;
         flex-shrink: 1;
 
+        &.form--show {
+            display: flex;
+        }
+
         @media (max-width: 1200px) {
+            display: none;
             width: 500px;
             margin: 15px auto;
             order: 2;
@@ -19,9 +24,18 @@
         @media (max-width: 992px) {
             order: 4;
         }
+
+        @media (max-width: 768px) {
+            display: none;
+            margin: 0 -15px -15px -15px;
+            width: 100vw;
+            max-width: unset;
+            bottom: -50px;
+            z-index: 1;
+        }
     }
 
-    &__picture {
+    &__vector {
         left: 12px;
         @extend %tr-y;
         fill: $dark-800;
@@ -61,6 +75,10 @@
         height: 100%;
         border-radius: 6px 0 0 6px;
         transition: all 0.3s;
+
+        @media (max-width: 768px) {
+            border-radius: 0;
+        }
 
         &::placeholder {
             color: $dark-800;

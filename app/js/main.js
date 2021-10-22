@@ -5,9 +5,25 @@ $(function () {
     });
 
 
-    $('.user__btn--cart, .order__btn--close').on('click', function () {
+    $('.user--cart, .order__btn--close').on('click', function () {
         $('.order').toggleClass('order--show');
     });
+
+    $('.user--search, .form__button--search').on('click', function () {
+        $('.form__search').toggleClass('form--show');
+    });
+
+    $('.burger, .mob-menu__vector-btn').on('click', function () {
+        $('.mob-menu').toggleClass('mob-menu--active');
+    });
+
+    $('.mob-menu__drop-down, .mob-menu__link').on('click', function () {
+        $('.mob-menu__list').toggleClass('mob-menu__list--active');
+    });
+
+
+
+
 
     $('.hotdeal').slick({
         prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span><svg class="slick-arrow__picture" width="20" height="32"><use xlink: href = "images/images.svg#arrow-left"></use></svg></button>',
@@ -82,7 +98,17 @@ $(function () {
 
 
 
-    $(".price__cost--old").append("<svg class=cross><line x1='0' y1='100%' x2='100%' y2='0' stroke-width='2' stroke='rgb(193,193,193)'></line></svg>");
+    $('.order__btn--delete').on('click', function () {
+        $(this).closest('.order__unit').css({ 'display': 'none' });
+    });
+
+
+
+
+
+
+
+    // $(".price__cost--old").append("<svg class=cross><line x1='0' y1='100%' x2='100%' y2='0' stroke-width='2' stroke='rgb(193,193,193)'></line></svg>");
 
 });
 
@@ -106,7 +132,7 @@ var mixer2 = mixitup(containerEl2, config);
 
 
 const quantity = function () {
-    const btns = document.querySelectorAll('.quantity__btn');
+    const btns = document.querySelectorAll('.quantity__vector-btn');
     btns.forEach(btn => {
         btn.addEventListener('click', counterState)
     });
@@ -129,6 +155,8 @@ const quantity = function () {
 };
 
 quantity();
+
+
 
 
 

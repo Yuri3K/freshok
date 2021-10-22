@@ -2,14 +2,8 @@
     position: relative;
     margin: 10px 0;
 
-    @media (max-width: 1200px) {
-        margin: 15px auto;
-        text-align: center;
-        order: 4;
-    }
-
-    @media (max-width: 992px) {
-        order: 2;
+    @media (max-width: 768px) {
+        display: none;
     }
 
     &__btn {
@@ -41,12 +35,13 @@
         }
     }
 
-    &__picture {
+    &__vector {
         position: absolute;
 
         &--burger {
             top: 15px;
             left: 20px;
+            fill: $main-900;
         }
 
         &--arrow {
@@ -83,7 +78,7 @@
         }
     }
 
-    &__subitem:last-child a {
+    &__subitem:last-child .catalog__sublink {
         border-radius: 0 0 6px 6px;
         border-bottom: none;
     }
@@ -113,3 +108,6 @@
         }
     }
 }
+
+
+
