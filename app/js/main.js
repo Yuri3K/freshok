@@ -69,23 +69,50 @@ $(function () {
 
 
 
+
+    $(document).mouseup(function (e) {
+        var block = $(".order");
+        if (!block.is(e.target) && block.has(e.target).length === 0) {
+            $('.order').removeClass('order--show');
+        }
+    });
+
+
+
     $('.sponsors__list').slick({
         arrows: false,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
 
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 4,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 376,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
             },
         ]
     });
+
+
+
 
 
     $(".unit__star").rateYo({
@@ -101,10 +128,6 @@ $(function () {
     $('.order__btn--delete').on('click', function () {
         $(this).closest('.order__unit').css({ 'display': 'none' });
     });
-
-
-
-
 
 
 

@@ -7,8 +7,10 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
 
-    &__item:not(:last-child) {
-        margin-bottom: 6px;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
     }
 
     &__link {

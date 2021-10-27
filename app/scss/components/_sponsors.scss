@@ -3,6 +3,10 @@
     &__item {
         position: relative;
         height: 200px;
+
+        @media (max-width: 768px) {
+            height: 155px;
+        }
     }
 
     &__link {

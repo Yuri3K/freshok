@@ -5,6 +5,8 @@
     margin-left: auto;
     margin-right: 24px;
 
+    
+
     &__vector-btn {
         background-color: $main-900;
         width: 24px;
@@ -12,8 +14,8 @@
         @extend %conditions-button;
 
         &--minus {
-        border-radius: 3px 0 0 3px;
-    }
+            border-radius: 3px 0 0 3px;
+        }
 
         &--plus {
             border-radius: 0 3px 3px 0;

@@ -1,0 +1,54 @@
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 15px;
+
+    .vector-btn {
+        @extend %conditions-vector;
+
+        @media (max-width: 768px) {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    &__item {
+        margin: 10px 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:nth-child(n+5) {
+            display: none;
+        }
+
+        &--man {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--like {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--search {
+            display: none;
+
+            @media (max-width: 1200px) {
+                display: block;
+            }
+        }
+    }
+
+    .user__vector {
+        @media (max-width: 768px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

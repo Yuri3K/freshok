@@ -9,6 +9,10 @@
         @media (max-width: 992px) {
             min-height: 450px;
         }
+
+        @media (max-width: 768px) {
+            min-height: 320px;
+        }
     }
 
     &__inbox {
@@ -20,6 +24,10 @@
         left: 0;
         margin: 0 auto;
         max-width: 1290px;
+
+        @media (max-width: 768px) {
+            padding: 10px 16px;
+        }
     }
 
     &__title,
@@ -45,23 +53,45 @@
 
         @media (max-width: 992px) {
             width: 100%;
-            font-size: 44px;
+            font-size: 42px;
+        }
+
+        @media (max-width: 576px) {
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 20px;
         }
     }
 
     &__stock {
         margin-bottom: 6px;
         color: $bright-300;
+
+        @media (max-width: 768px) {
+            margin-bottom: 17px;
+        }
     }
     
     &__text {
         font-size: 16px;
         margin-bottom: 35px;
         letter-spacing: 0;
+        line-height: 1.4;
+        
+        @media (max-width: 768px) {
+            margin-bottom: 28px;
+        }
     }
 
     &__button {
         display: inline-block;
         @extend %conditions-button;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

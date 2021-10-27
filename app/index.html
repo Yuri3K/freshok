@@ -276,6 +276,7 @@
                 <div class="header__main">
                     <a class="logo" href="#">
                         <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
+                        <img class="logo__img--mob" src="images/logo-short.svg" alt="Логотип" width="37" height="40">
                     </a>
 
                     <div class="catalog">
@@ -415,806 +416,345 @@
                                     12
                                 </span>
                             </button>
+                        </li>
+                    </ul>
 
-                            <div class="order">
-                                <div class="order__head">
-                                    <span class="order__title">Корзина</span>
-                                    <button class="order__btn order__btn--close" type="button">
-                                        <span class="sr-only">Закрыть корзину</span>
-                                        <svg class="order__cross" width="24" height="24">
+                    <div class="order">
+                        <div class="order__head">
+                            <span class="order__title">Корзина</span>
+                            <button class="order__btn order__btn--close" type="button">
+                                <span class="sr-only">Закрыть корзину</span>
+                                <svg class="order__cross" width="24" height="24">
+                                    <use xlink:href="images/images.svg#cross"></use>
+                                </svg>
+                            </button>
+                            <button class="order__clean" type="button">
+                                очистить корзину
+                            </button>
+                        </div>
+
+                        <div class="order__body">
+
+                            <article class="order__unit unit">
+
+                                <a class="unit__link order__link" href="#">
+                                    <img class="unit__img order__img" src="images/units/pineapple.jpg" alt="Ананас"
+                                        width="60" height="60">
+                                </a>
+
+                                <div class="order__info">
+                                    <span class="unit__name order__name">
+                                        Ананас, 1кг
+                                    </span>
+                                    <ul class="price order__price">
+                                        <li class="price__cost">
+                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <form class="quantity order__quantity">
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                        type="button" data-direction="minus">
+                                        <span class="sr-only">
+                                            Уменьшить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#minus"></use>
+                                        </svg>
+                                    </button>
+
+                                    <label for="" class="quantity__numeric order__numeric">
+                                        <span class="sr-only">Введите количество</span>
+                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
+                                    </label>
+
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                        type="button" data-direction="plus">
+                                        <span class="sr-only">
+                                            Увеличить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#plusik"></use>
+                                        </svg>
+                                    </button>
+
+
+
+                                    <button class="order__btn order__btn--delete" type="button">
+                                        <span class="sr-only">
+                                            Удалить карту товара
+                                        </span>
+                                        <svg class="order__cross-mini" width="12" height="12">
                                             <use xlink:href="images/images.svg#cross"></use>
                                         </svg>
                                     </button>
-                                    <button class="order__clean" type="button">
-                                        очистить корзину
+
+                                </form>
+
+                                <span class="order__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="order__unit unit">
+
+                                <a class="unit__link order__link" href="#">
+                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
+                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                </a>
+                                <div class="order__info">
+                                    <span class="unit__name order__name">
+                                        Питохайя красная с белой мякотью, 1шт
+                                    </span>
+
+                                    <ul class="price order__price">
+
+                                        <li class="price__cost">
+                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <form class="quantity order__quantity">
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                        type="button" data-direction="minus">
+                                        <span class="sr-only">
+                                            Уменьшить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#minus"></use>
+                                        </svg>
                                     </button>
-                                </div>
 
-                                <div class="order__body">
+                                    <label for="" class="quantity__numeric order__numeric">
+                                        <span class="sr-only">Введите количество</span>
+                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
+                                    </label>
 
-                                    <article class="order__unit unit">
 
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/pineapple.jpg"
-                                                alt="Ананас" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Ананас, 1кг
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                        type="button" data-direction="plus">
+                                        <span class="sr-only">
+                                            Увеличить количество
                                         </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#plusik"></use>
+                                        </svg>
+                                    </button>
 
-                                        <ul class="price order__price">
-                                            <li class="price__cost">
-                                                999<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                1998<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-
-                                        </form>
-
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
+                                    <button class="order__btn order__btn--delete" type="button">
+                                        <span class="sr-only">
+                                            Удалить карту товара
                                         </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-
-
-                                    <article class="order__unit unit">
-
-                                        <a class="unit__link order__link" href="#">
-                                            <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                                alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                        </a>
-
-                                        <span class="unit__name order__name">
-                                            Питохайя красная с белой мякотью, 1шт
-                                        </span>
-
-                                        <ul class="price order__price">
-
-                                            <li class="price__cost">
-                                                1019<span class="price__index"><span class="currency">₽</span></span>
-                                            </li>
-                                        </ul>
-
-                                        <form class="quantity order__quantity">
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                                type="button" data-direction="minus">
-                                                <span class="sr-only">
-                                                    Уменьшить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#minus"></use>
-                                                </svg>
-                                            </button>
-
-                                            <label for="" class="quantity__numeric order__numeric">
-                                                <span class="sr-only">Введите количество</span>
-                                                <input class="quantity__number" type="number" name="numeric" value="1"
-                                                    min="1">
-                                            </label>
-
-
-                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                                type="button" data-direction="plus">
-                                                <span class="sr-only">
-                                                    Увеличить количество
-                                                </span>
-                                                <svg class="quantity__vector" width="16" height="16">
-                                                    <use xlink:href="images/images.svg#plusik"></use>
-                                                </svg>
-                                            </button>
-
-                                            <span class="order__total">
-                                                2038<span class="price__index"><span class="currency">₽</span></span>
-                                            </span>
-
-                                            <button class="order__btn order__btn--delete" type="button">
-                                                <span class="sr-only">
-                                                    Удалить карту товара
-                                                </span>
-                                                <svg class="order__cross-mini" width="12" height="12">
-                                                    <use xlink:href="images/images.svg#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </article>
-
-                                </div>
-
-                                <div class="order__footer">
-                                    <span class="order__goods">
-                                        Товаров на сумму
+                                        <svg class="order__cross-mini" width="12" height="12">
+                                            <use xlink:href="images/images.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+
+                                <span class="order__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="order__unit unit">
+
+                                <a class="unit__link order__link" href="#">
+                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
+                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                </a>
+                                <div class="order__info">
+                                    <span class="unit__name order__name">
+                                        Питохайя красная с белой мякотью, 1шт
                                     </span>
-                                    <span class="order__sum">
-                                        2038<span class="price__index"><span class="currency">₽</span></span>
-                                    </span>
-                                    <a class="order__button button" href="#">
-                                        Оформить заказ
-                                    </a>
-                                </div>
-                            </div>
 
-                        </li>
-                    </ul>
+                                    <ul class="price order__price">
+
+                                        <li class="price__cost">
+                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <form class="quantity order__quantity">
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                        type="button" data-direction="minus">
+                                        <span class="sr-only">
+                                            Уменьшить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#minus"></use>
+                                        </svg>
+                                    </button>
+
+                                    <label for="" class="quantity__numeric order__numeric">
+                                        <span class="sr-only">Введите количество</span>
+                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
+                                    </label>
+
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                        type="button" data-direction="plus">
+                                        <span class="sr-only">
+                                            Увеличить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#plusik"></use>
+                                        </svg>
+                                    </button>
+
+                                    <button class="order__btn order__btn--delete" type="button">
+                                        <span class="sr-only">
+                                            Удалить карту товара
+                                        </span>
+                                        <svg class="order__cross-mini" width="12" height="12">
+                                            <use xlink:href="images/images.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+
+                                <span class="order__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="order__unit unit">
+
+                                <a class="unit__link order__link" href="#">
+                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
+                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                </a>
+                                <div class="order__info">
+                                    <span class="unit__name order__name">
+                                        Питохайя красная с белой мякотью, 1шт
+                                    </span>
+
+                                    <ul class="price order__price">
+
+                                        <li class="price__cost">
+                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <form class="quantity order__quantity">
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                        type="button" data-direction="minus">
+                                        <span class="sr-only">
+                                            Уменьшить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#minus"></use>
+                                        </svg>
+                                    </button>
+
+                                    <label for="" class="quantity__numeric order__numeric">
+                                        <span class="sr-only">Введите количество</span>
+                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
+                                    </label>
+
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                        type="button" data-direction="plus">
+                                        <span class="sr-only">
+                                            Увеличить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#plusik"></use>
+                                        </svg>
+                                    </button>
+
+                                    <button class="order__btn order__btn--delete" type="button">
+                                        <span class="sr-only">
+                                            Удалить карту товара
+                                        </span>
+                                        <svg class="order__cross-mini" width="12" height="12">
+                                            <use xlink:href="images/images.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+
+                                <span class="order__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="order__unit unit">
+
+                                <a class="unit__link order__link" href="#">
+                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
+                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                </a>
+                                <div class="order__info">
+                                    <span class="unit__name order__name">
+                                        Питохайя красная с белой мякотью, 1шт
+                                    </span>
+
+                                    <ul class="price order__price">
+
+                                        <li class="price__cost">
+                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <form class="quantity order__quantity">
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                        type="button" data-direction="minus">
+                                        <span class="sr-only">
+                                            Уменьшить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#minus"></use>
+                                        </svg>
+                                    </button>
+
+                                    <label for="" class="quantity__numeric order__numeric">
+                                        <span class="sr-only">Введите количество</span>
+                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
+                                    </label>
+
+
+                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                        type="button" data-direction="plus">
+                                        <span class="sr-only">
+                                            Увеличить количество
+                                        </span>
+                                        <svg class="quantity__vector" width="16" height="16">
+                                            <use xlink:href="images/images.svg#plusik"></use>
+                                        </svg>
+                                    </button>
+
+                                    <button class="order__btn order__btn--delete" type="button">
+                                        <span class="sr-only">
+                                            Удалить карту товара
+                                        </span>
+                                        <svg class="order__cross-mini" width="12" height="12">
+                                            <use xlink:href="images/images.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+
+                                <span class="order__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="order__footer">
+                            <span class="order__goods">
+                                Товаров на сумму
+                            </span>
+                            <span class="order__sum">
+                                2038<span class="price__index"><span class="currency">₽</span></span>
+                            </span>
+                            <a class="order__button button" href="#" target="_blank">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -1374,7 +914,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1456,7 +996,7 @@
                         </li>
                         <li class="products__item mix category-fruits">
                             <article class="unit">
-                                <button class="vector-btn unit__vector-btn" type="button">
+                                <button class="vector-btn unit__vector-btn--heart" type="button">
                                     <span class="sr-only">
                                         Отметить понравилось
                                     </span>
@@ -1537,7 +1077,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1616,7 +1156,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1695,7 +1235,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1775,7 +1315,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1861,7 +1401,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn" type="button">
+                                    <button class="vector-btn unit__vector-btn--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1928,7 +1468,7 @@
                         </li>
                         <li class="products__item mix">
                             <article class="unit">
-                                <button class="vector-btn unit__vector-btn" type="button">
+                                <button class="vector-btn unit__vector-btn--heart" type="button">
                                     <span class="sr-only">
                                         Отметить понравилось
                                     </span>
@@ -2012,7 +1552,10 @@
                                 свежайшие фрукты
                             </span>
                             <p class="benefit__offer">
-                                начни фруктовое лето всего от 99 <span class="currency">₽</span>
+                                начни фруктовое лето
+                                <span class="benefit__add">
+                                    всего от 99 <span class="currency">₽</span>
+                                </span>
                             </p>
                             <a class="go-to" href="#">
                                 перейти к покупкам
@@ -2026,7 +1569,10 @@
                                 сезонная распродажа
                             </span>
                             <p class="benefit__offer">
-                                овощепад до -50%
+                                овощепад
+                                <span class="benefit__add">
+                                    до -50%
+                                </span>
                             </p>
                             <a class="go-to" href="#">
                                 перейти к покупкам
@@ -2039,7 +1585,10 @@
                                 ням-ням
                             </span>
                             <p class="benefit__offer">
-                                свежий хлебчик
+                                свежий
+                                <span class="benefit__add">
+                                    хлебчик
+                                </span>
                             </p>
                             <a class="go-to" href="#">
                                 перейти к покупкам
@@ -2644,29 +2193,21 @@
                         <label class="form__label form__label--email" for="email">
                             Следите за нашими акциями
                         </label>
-                        <input class="form__field form__field--email" type="email" placeholder="email@email.com"
-                            name="email" id="email">
+                        <div class="form__block">
+                            <input class="form__field form__field--email" type="email" placeholder="email@email.com"
+                                name="email" id="email">
 
-                        <button class="form__button form__button--email" type="submit">
-                            Подписаться
-                        </button>
+                            <button class="form__button form__button--email" type="submit">
+                                Подписаться
+                            </button>
+                        </div>
                     </form>
                 </div>
-                <div class="footer__menu footer__menu--top">
-                    <ul class="footer__list">
+                <div class="footer__menu footer__abroad">
+                    <ul class="footer__nav">
                         <li class="footer__item">
                             <a class="footer__link" href="#">
                                 О нас
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Оплата и доставка
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Отзывы
                             </a>
                         </li>
                         <li class="footer__item">
@@ -2676,17 +2217,17 @@
                         </li>
                         <li class="footer__item">
                             <a class="footer__link" href="#">
-                                Вакансии
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Новости
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
                                 Публичная оферта
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Вакансии
                             </a>
                         </li>
                         <li class="footer__item">
@@ -2694,12 +2235,22 @@
                                 Акции
                             </a>
                         </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Нововсти
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
-                <address class="footer__address footer__address--top">
-                    <ul class="footer__list footer__list--address">
-                        <li class="footer__item footer__item--address">
+                <address class="footer__address footer__abroad">
+                    <ul class="footer__list">
+                        <li class="footer__item">
                             <a class="footer__link" href="tel:+7907288365">
                                 Горячая линия +7 907 288 365
                             </a>

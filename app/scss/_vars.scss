@@ -47,6 +47,24 @@ $bright-200: #a12e5e;
     }
 }
 
+
+%conditions-vector {
+    transition: all 0.5s;
+    
+    &:hover {
+        transition: all 0.5s;
+        background-color: rgba($bright-1000, 0.1);
+    }
+    
+    &:focus {
+        transform: scale(1.2);
+    }
+    
+    &:active {
+        opacity: 0.7;
+    }
+}
+
 %conditions-logo {
     transition: all 0.5s;
     
@@ -60,23 +78,6 @@ $bright-200: #a12e5e;
 
     &:active {
         transform: scale(1.1);
-    }
-}
-
-%conditions-vector {
-    transition: all 0.5s;
-
-    &:hover {
-        transition: all 0.5s;
-        background-color: rgba($bright-1000, 0.1);
-    }
-
-    &:focus {
-        transform: scale(1.2);
-    }
-
-    &:active {
-        opacity: 0.7;
     }
 }
 
