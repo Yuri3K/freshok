@@ -24,7 +24,10 @@
     &__top {
         display: flex;
         justify-content: space-between;
+    }
 
+    & .badge {
+        margin: 5px 0 0 11px;
     }
 
     &__link {
