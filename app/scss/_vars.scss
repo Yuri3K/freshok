@@ -3,6 +3,7 @@ $main-900: #63A60F;
 $main-200:#E0EDCF;
 $main-100:#EFF6E7;
 $secondary-600: #C1C1C1;
+$secondary-500: #C4C4C4;
 $secondary-300: #F2F2F2;
 $secondary-200: #F3F3F2;
 $secondary-150: #F5F5F5;
@@ -98,4 +99,11 @@ $bright-200: #a12e5e;
         border-left: 2px solid $bright-800;
         border-right: 2px solid $bright-800;
     }
+}
+
+%input-hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    appearance: none;
 }

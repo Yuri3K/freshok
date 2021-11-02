@@ -47,6 +47,7 @@
         &--arrow {
             top: 23px;
             right: 10px;
+            fill: $main-900;
 
             &.show {
                 transition: transform 0.5s;
