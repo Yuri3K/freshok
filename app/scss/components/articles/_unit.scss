@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 5px 0 18px;
     max-width: 300px;
-    height: 409px;
+    // height: 409px;
     border: 1px solid rgba($dark-950, 0.2);
     border-radius: 6px;
     text-align: left;
@@ -169,20 +169,20 @@
 
 
     &__name {
-        display: block;
+        display: flex;
         padding: 0 17px;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.4;
         color: $dark-900;
-        margin-bottom: auto;
+        margin-bottom: 10px;
         letter-spacing: 0.03em;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
-
+        min-height: 60px;
 
         @media (max-width: 768px) {
             padding: 0 11px;
@@ -208,6 +208,7 @@
                 width: 100%;
                 margin: 0 auto 10px;
                 order: 1;
+                justify-content: center;
             }
         }
 

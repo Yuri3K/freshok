@@ -83,6 +83,13 @@ $(function () {
         }
     });
 
+    $(document).mouseup(function (e) {
+        var block = $(".mob-menu");
+        if (!block.is(e.target) && block.has(e.target).length === 0) {
+            $('.mob-menu').removeClass('mob-menu--active');
+        }
+    });
+
 
 
     $('.sponsors__list').slick({

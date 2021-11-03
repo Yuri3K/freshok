@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -252,5 +251,25 @@ button {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+
+.abroad {
+
+    @media (max-width: 768px) {
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc((100vw - 100%) / -2);
+            right: calc((100vw - 100%) / -2);
+            height: 100%;
+            background-color: inherit;
+            z-index: 0;
+            border-bottom: 1px solid rgba($bright-1000, 0.1);
+        }
     }
 }
