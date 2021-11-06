@@ -29,6 +29,19 @@ $(function () {
         $(this).closest('.order__unit').css({ 'display': 'none' });
     });
 
+    $('.top__button').on('click', function () {
+        $('.top__button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.top__button--list').on('click', function () {
+        $('.variety').addClass('columns');
+    });
+
+    $('.top__button--grid').on('click', function () {
+        $('.variety').removeClass('columns');
+    });
+
 
 
     $('.hotdeal').slick({
@@ -126,7 +139,7 @@ $(function () {
 
 
 
-    $(".unit__star").rateYo({
+    $(".variety__star").rateYo({
         rating: 1,
         maxValue: 1,
         numStars: 1,
@@ -197,31 +210,35 @@ $(function () {
     });
 
 
-
+    $('.top__select').styler();
 
 
     // $(".price__cost--old").append("<svg class=cross><line x1='0' y1='100%' x2='100%' y2='0' stroke-width='2' stroke='rgb(193,193,193)'></line></svg>");
 
 });
 
+
+
 var containerEl1 = document.querySelector('[data-ref="mixer-1"]');
 var containerEl2 = document.querySelector('[data-ref="mixer-2"]');
 
-var config = {
-    controls: {
-        scope: 'local'
-    },
+if (containerEl1 || containerEl2) {
 
-    animation: {
-        effectsIn: 'fade translateY(-100%)',
-        duration: 1500,
-    }
-};
+    var config = {
+        controls: {
+            scope: 'local'
+        },
 
-var mixer1 = mixitup(containerEl1, config);
-var mixer2 = mixitup(containerEl2, config);
+        animation: {
+            effectsIn: 'fade translateY(-100%)',
+            duration: 1500,
+        }
+    };
 
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
 
+}
 
 const quantity = function () {
     const btns = document.querySelectorAll('.quantity__vector-btn');

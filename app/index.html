@@ -900,9 +900,9 @@
 
                     <ul class="products__list">
                         <li class="products__item mix category-fruits">
-                            <article class="unit">
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--new" href="#">
                                                 Новинка
@@ -914,408 +914,443 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/pineapple.jpg" alt="Ананас" width="298"
+                                    <img class="variety__img" src="images/units/pineapple.jpg" alt="Ананас" width="298"
                                         height="215">
                                 </a>
-
-                                <span class="unit__name">
-                                    Ананас, 1кг
-                                </span>
-
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            1999 <span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            999 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label class="quantity__numeric">
-                                            <span class="sr-only">
-                                                Введите количество
-                                            </span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="products__item mix category-fruits">
-                            <article class="unit">
-                                <button class="vector-btn unit__vector-btn--heart" type="button">
-                                    <span class="sr-only">
-                                        Отметить понравилось
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+
+                                    <span class="variety__name">
+                                        Ананас, 1кг
                                     </span>
-                                    <svg class="unit--heart" width="32" height="29">
-                                        <use xlink:href="images/images.svg#heart"></use>
-                                    </svg>
-                                </button>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img" src="images/units/lemon.jpg" alt="Лимон" width="298"
-                                        height="215">
-                                </a>
-                                <span class="unit__name">
-                                    Лимон, 1кг
-                                </span>
-                                <div class="unit__buy">
 
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            199 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
 
-                                    <form class="quantity">
+                                            <li class="price__cost">
+                                                999 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
 
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
                                             <span class="sr-only">
-                                                Уменьшить количество
+                                                Отправить в корзину
                                             </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
                                             </svg>
                                         </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="products__item mix category-fruits">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
-                                            Отправить в корзину
+                                            Отметить понравилось
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
+                                        <svg class="variety__vector" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/lemon.jpg" alt="Лимон" width="298"
+                                        height="215">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Лимон, 1кг
+                                    </span>
+                                    <div class="variety__buy">
+
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                199 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
 
                         <li class="products__item mix category-fruits">
-                            <article class="unit">
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--hit" href="#">
                                                 Хит
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/drugon-fruit.jpg" alt="Питахайя"
+                                    <img class="variety__img" src="images/units/drugon-fruit.jpg" alt="Питахайя"
                                         width="298" height="215">
                                 </a>
-                                <span class="unit__name">
-                                    Питахайя красная с белой мякотью, 1шт
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            1019 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Питахайя красная с белой мякотью, 1шт
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                1019 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
+
                         <li class="products__item mix category-vegetables">
-                            <article class="unit">
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--new" href="#">
                                                 Новинка
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/papric.jpg" alt="Перец оранжевый"
+                                    <img class="variety__img" src="images/units/papric.jpg" alt="Перец оранжевый"
                                         width="298" height="215">
                                 </a>
-                                <span class="unit__name">
-                                    Перец оранжевый, 1кг
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            349 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Перец оранжевый, 1кг
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                349 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
                         <li class="products__item mix category-vegetables">
-                            <article class="unit">
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--hit" href="#">
                                                 Хит
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/currot.jpg" alt="Морковь молодая"
+                                    <img class="variety__img" src="images/units/currot.jpg" alt="Морковь молодая"
                                         width="298" height="215">
                                 </a>
-                                <span class="unit__name">
-                                    Морковь молодая с бабушкиной грядки, 1кг
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            49 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Морковь молодая с бабушкиной грядки, 1кг
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                49 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
                         <li class="products__item mix category-juices">
-                            <article class="unit">
-
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--discount" href="#">
                                                 -30%
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
@@ -1324,214 +1359,243 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/juice.jpg" alt="Напиток Sanpellegrino"
+                                    <img class="variety__img" src="images/units/juice.jpg" alt="Напиток Sanpellegrino"
                                         width="298" height="215">
                                 </a>
-                                <span class="unit__name">
-                                    Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
-                                    безалкогольный
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            299 <span class="currency">₽</span>
-                                        </li>
-                                        <li class="price__cost">
-                                            199 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                                        безалкогольный
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                299 <span class="currency">₽</span>
+                                            </li>
+                                            <li class="price__cost">
+                                                199 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
                         <li class="products__item mix category-grocery">
-                            <article class="unit">
-                                <div class="unit__top">
-                                    <ul class="unit__badge badge">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <ul class="badge">
                                         <li class="badge__item">
                                             <a class="badge__link badge__link--new" href="#">
                                                 Новинка
                                             </a>
                                         </li>
                                     </ul>
-                                    <button class="vector-btn unit__vector-btn--heart" type="button">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
                                 </div>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img" src="images/units/coffe.jpg" alt="Кофе с коноплей"
+                                    <img class="variety__img" src="images/units/coffe.jpg" alt="Кофе с коноплей"
                                         width="298" height="215">
                                 </a>
-                                <span class="unit__name">
-                                    Кофе с коноплей органический Caffé Salomoni 250г
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            877 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
-                                        <span class="sr-only">
-                                            Отправить в корзину
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Кофе с коноплей органический Caffé Salomoni 250г
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                877 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
                         <li class="products__item mix">
-                            <article class="unit">
-                                <button class="vector-btn unit__vector-btn--heart" type="button">
-                                    <span class="sr-only">
-                                        Отметить понравилось
-                                    </span>
-                                    <svg class="unit--heart" width="32" height="29">
-                                        <use xlink:href="images/images.svg#heart"></use>
-                                    </svg>
-                                </button>
-                                <a class="unit__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img" src="images/units/ketchup.jpg" alt="Кетчуп" width="298"
-                                        height="215">
-                                </a>
-                                <span class="unit__name">
-                                    Кетчуп томатный детский органический Bio-Zentrale 500мл
-                                </span>
-                                <div class="unit__buy">
-                                    <ul class="price">
-                                        <li class="price__cost">
-                                            600 <span class="currency">₽</span>
-                                        </li>
-                                    </ul>
-
-                                    <form class="quantity">
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                            type="button" data-direction="minus">
-                                            <span class="sr-only">
-                                                Уменьшить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#minus"></use>
-                                            </svg>
-                                        </button>
-
-                                        <label for="" class="quantity__numeric">
-                                            <span class="sr-only">Введите количество</span>
-                                            <input class="quantity__number" type="number" name="numeric" value="1"
-                                                min="1">
-                                        </label>
-
-
-                                        <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                            type="button" data-direction="plus">
-                                            <span class="sr-only">
-                                                Увеличить количество
-                                            </span>
-                                            <svg class="quantity__vector" width="16" height="16">
-                                                <use xlink:href="images/images.svg#plusik"></use>
-                                            </svg>
-                                        </button>
-
-                                    </form>
-
-                                    <button class="vector-btn unit__vector-btn--cart" type="button">
+                            <article class="variety">
+                                <div class="variety__top">
+                                    <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
-                                            Отправить в корзину
+                                            Отметить понравилось
                                         </span>
-                                        <svg class="unit--cart" width="16" height="16">
-                                            <use xlink:href="images/images.svg#cart"></use>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/ketchup.jpg" alt="Кетчуп" width="298"
+                                        height="215">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Кетчуп томатный детский органический Bio-Zentrale 500мл
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost">
+                                                600 <span class="currency">₽</span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
@@ -1620,368 +1684,761 @@
 
                     <ul class="stock__list">
                         <li class="stock__item mix category-new">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/pineapple.jpg" alt="Ананас"
-                                        width="100" height="100">
-                                </a>
-
-                                <span class="unit__name stock__name">
-                                    Ананас, 1кг
-                                </span>
-                                <span class="presence">
-                                    в наличии
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            1999<span class="currency">₽</span>
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
                                         </li>
-
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
                                         </li>
                                     </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
                                 </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/pineapple.jpg" alt="Ананас" width="298"
+                                        height="215">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
 
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.5</div>
-                                    <div class="unit__star"></div>
+                                    <span class="variety__name">
+                                        Ананас, 1кг
+                                    </span>
+
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999<span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
 
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/coffe.jpg" alt="Кофе"
-                                        width="100" height="100">
-                                </a>
-
-                                <span class="unit__name stock__name">
-                                    Кофе с коноплей органический Caffé Salomoni 250г
-                                </span>
-                                <span class="presence ending">
-                                    заканчивается
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            877<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            777<span class="price__index"><span class="currency">₽</span></span>
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
                                         </li>
                                     </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-
-
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.9</div>
-                                    <div class="unit__star"></div>
-                                </div>
-
-
-                            </article>
-                        </li>
-
-                        <li class="stock__item mix category-new">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img stock__img" src="images/units/strawberry.jpg" alt="Клубника"
-                                        width="100" height="100">
+                                    <img class="variety__img" src="images/units/coffe.jpg" alt="Кофе с коноплей"
+                                        width="298" height="215">
                                 </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence ending">
+                                            заканчивается
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Кофе с коноплей органический Caffé Salomoni 250г
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                877<span class="currency">₽</span>
+                                            </li>
 
-                                <span class="unit__name stock__name">
-                                    Клубника, 1 кг
-                                </span>
-                                <span class="presence end">
-                                    нет в наличии
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
+                                            <li class="price__cost">
+                                                777<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
                                             </svg>
-                                            600<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            440<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="unit__rating">
-                                    <div class="unit__text">5.0</div>
-                                    <div class="unit__star"></div>
-                                </div>
-                            </article>
-                        </li>
-
-                        <li class="stock__item mix category-new">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/mango.jpg" alt="Манго"
-                                        width="100" height="100">
-                                </a>
-
-                                <span class="unit__name stock__name">
-                                    Манго, 1 шт
-                                </span>
-                                <span class="presence">
-                                    в наличии
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            960<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            660<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="unit__rating">
-                                    <div class="unit__text">5.0</div>
-                                    <div class="unit__star"></div>
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--new" href="#">
-                                            Новинка
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
                                         <use xlink:href="images/images.svg#search"></use>
                                     </svg>
-                                    <img class="unit__img stock__img" src="images/units/salmon.jpg" alt="Лосось"
+                                    <img class="variety__img" src="images/units/strawberry.jpg" alt="Клубника"
                                         width="100" height="100">
                                 </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence end">
+                                            нет в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Клубника, 1 кг
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                600<span class="currency">₽</span>
+                                            </li>
 
-                                <span class="unit__name stock__name">
-                                    Лосось, 1 кг
-                                </span>
-                                <span class="presence">
-                                    в наличии
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
+                                            <li class="price__cost">
+                                                440<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
                                             </svg>
-                                            1199<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.5</div>
-                                    <div class="unit__star"></div>
-                                </div>
-
-
-                            </article>
-                        </li>
-                        <li class="stock__item mix category-hit">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--hit" href="#">
-                                            Хит
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/veg_juice.jpg" alt="Сок овощной"
-                                        width="100" height="100">
-                                </a>
-
-                                <span class="unit__name stock__name">
-                                    Сок Granini овощной 100%, 0.5л
-                                </span>
-                                <sapn class="presence ending">
-                                    заканчивается
-                                </sapn>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            230<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            180<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.9</div>
-                                    <div class="unit__star"></div>
-                                </div>
-                            </article>
-                        </li>
-
-                        <li class="stock__item mix category-hit">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--hit" href="#">
-                                            Хит
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/basket.jpg"
-                                        alt="Корзина с фрутками" width="100" height="100">
-                                </a>
-
-                                <span class="unit__name stock__name">
-                                    Фруктовая корзина, 1 шт
-                                </span>
-                                <span class="presence">
-                                    в наличии
-                                </span>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            3990<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            5990<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.8</div>
-                                    <div class="unit__star"></div>
-                                </div>
-
-
                             </article>
                         </li>
 
-                        <li class="stock__item mix category-hit">
-                            <article class="unit stock__unit">
-                                <ul class="stock__badge badge">
-                                    <li class="badge__item">
-                                        <a class="badge__link badge__link--hit" href="#">
-                                            Хит
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="unit__link stock__link" href="#">
-                                    <svg class="unit--learn" width="20" height="20">
-                                        <use xlink:href="images/images.svg#search"></use>
-                                    </svg>
-                                    <img class="unit__img stock__img" src="images/units/meat.jpg" alt="Свинина мякоть"
-                                        width="100" height="100">
-                                </a>
-
-                                <sapn class="unit__name stock__name">
-                                    Свинина мякоть, 1 кг
-                                </sapn>
-                                <sapn class="presence">
-                                    в наличии
-                                </sapn>
-                                <div class="unit__buy stock__buy">
-                                    <ul class="price">
-                                        <li class="price__cost price__cost--old">
-                                            <svg class="price__cross" width="20" height="20">
-                                                <use xlink:href="images/images.svg#line"></use>
-                                            </svg>
-                                            599<span class="currency">₽</span>
-                                        </li>
-
-                                        <li class="price__cost">
-                                            499<span class="price__index"><span class="currency">₽</span></span>
+                        <li class="stock__item mix category-new">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
                                         </li>
                                     </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
                                 </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/mango.jpg" alt="Манго" width="100"
+                                        height="100">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Манго, 1 шт
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                960<span class="currency">₽</span>
+                                            </li>
 
-                                <div class="unit__rating">
-                                    <div class="unit__text">4.6</div>
-                                    <div class="unit__star"></div>
+                                            <li class="price__cost">
+                                                660<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
+                            </article>
+                        </li>
 
+                        <li class="stock__item mix category-new">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/salmon.jpg" alt="Лосось" width="100"
+                                        height="100">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Лосось, 1 кг
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999<span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="stock__item mix category-new">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--hit" href="#">
+                                                Хит
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/veg_juice.jpg" alt="Сок овощной"
+                                        width="100" height="100">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence ending">
+                                            заканчивается
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Сок Granini овощной 100%, 0.5л
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                230<span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                180<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="stock__item mix category-new">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--hit" href="#">
+                                                Хит
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/basket.jpg" alt="Корзина с фрутками"
+                                        width="100" height="100">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Фруктовая корзина, 1 шт
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                5990<span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                3990<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="stock__item mix category-new">
+                            <article class="variety variety__stock">
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--hit" href="#">
+                                                Хит
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/meat.jpg" alt="Свинина мякоть"
+                                        width="100" height="100">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+                                    <span class="variety__name">
+                                        Свинина мякоть, 1 кг
+                                    </span>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                599<span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                499<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+
+                                        <form class="quantity">
+
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label for="" class="quantity__numeric">
+                                                <span class="sr-only">Введите количество</span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+
+                                        </form>
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </article>
                         </li>
                     </ul>

@@ -1,6 +1,5 @@
 .quantity {
     display: flex;
-    align-self: center;
     margin-left: auto;
     margin-right: 24px;
 
@@ -32,8 +31,7 @@
     }
 
     &__numeric {
-        // position: relative;
-        width: 50px;
+        width: 36px;
     }
 
     &__number {

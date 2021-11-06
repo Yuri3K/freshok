@@ -119,7 +119,7 @@ button {
 
     &__cost {
         &:not(:last-child) {
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         &--old {
@@ -270,6 +270,62 @@ button {
             background-color: inherit;
             z-index: 0;
             border-bottom: 1px solid rgba($bright-1000, 0.1);
+        }
+    }
+}
+
+.sort {
+    &__list {
+        max-height: 0;
+    }
+
+    &__item {
+        padding: 18px 0 18px 15px;
+        background-color: $bright-1000;
+        border: 1px solid $secondary-600;
+        border-radius: 6px;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        @extend %input-hidden;
+
+        &:checked ~ .sort__list {
+            transition: 1s;
+            max-height: 267px;
+        }
+    }
+
+    &__vector {
+        transform: rotate(180deg);
+        margin-right: 24px;
+        fill: $secondary-600;
+        &.sort__vector--rotate {
+            transition: transform 0.5s;
+            transform: rotate(360deg);
+        }
+    }
+
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-bottom: 18px;
+        font-family: 'Ruda', sans-serif;
+        font-size: 24px;
+        line-height: 1.2;
+        color: $dark-900;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -16px;
+            bottom: 0;
+            width: calc(100% + 16px);
+            height: 1px;
+            background-color: $secondary-600;
         }
     }
 }
