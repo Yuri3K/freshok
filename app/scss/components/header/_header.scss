@@ -11,19 +11,24 @@
         font-weight: 700;
         color: $bright-1000;
         background-color: $dark-800;
+
+        &::before {
+            border-left: 9999px solid $dark-800;
+            box-shadow: 9999px 0 0 $dark-800;
+        }
     }
 
     &__top::before,
     &__main::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: calc((100vw - 100%) / -2);
-        right: calc((100vw - 100%) / -2); 
-        height: 100%;
-        background-color: inherit;
         z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: 0;
     }
+
 
     &__vector {
         position: absolute;
@@ -128,6 +133,11 @@
 
         @media (max-width: 768px) {
             padding: 0;
+        }
+
+        &::before {
+            border-left: 9999px solid $main-900;
+            box-shadow: 9999px 0 0 $main-900;
         }
     }
 

@@ -19,6 +19,7 @@
 <body>
 
     <header class="header">
+        <h1 class="sr-only">Онлайн маркет Фрешок</h1>
         <div class="mob-menu">
             <div class="mob-menu__firstline">
                 <a class="mob-menu__logo" href="#">
@@ -421,7 +422,7 @@
 
                     <div class="order">
                         <div class="order__head">
-                            <span class="order__title">Корзина</span>
+                            <h2 class="order__title">Корзина</h2>
                             <button class="order__btn order__btn--close" type="button">
                                 <span class="sr-only">Закрыть корзину</span>
                                 <svg class="order__cross" width="24" height="24">
@@ -435,309 +436,551 @@
 
                         <div class="order__body">
 
-                            <article class="order__unit unit">
+                            <article class="variety variety__order">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/pineapple.jpg" alt="Ананас" width="60"
+                                        height="60">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
 
-                                <a class="unit__link order__link" href="#">
-                                    <img class="unit__img order__img" src="images/units/pineapple.jpg" alt="Ананас"
+                                    <h3 class="variety__name">
+                                        Ананас, 1кг
+                                    </h3>
+
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="variety variety__order">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/drugon-fruit.jpg"
+                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="variety__name">
+                                        Питохайя красная с белой мякотью, 1шт
+                                    </h3>
+
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
+                            </article>
+
+                            <article class="variety variety__order">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/coffe.jpg" alt="Кофе с коноплей"
                                         width="60" height="60">
                                 </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
 
-                                <div class="order__info">
-                                    <span class="unit__name order__name">
-                                        Ананас, 1кг
-                                    </span>
-                                    <ul class="price order__price">
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
+                                    <h3 class="variety__name">
+                                        Кофе с коноплей органический Caffé Salomoni 250г
+                                    </h3>
+
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-
-                                <form class="quantity order__quantity">
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                        type="button" data-direction="minus">
-                                        <span class="sr-only">
-                                            Уменьшить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#minus"></use>
-                                        </svg>
-                                    </button>
-
-                                    <label class="quantity__numeric order__numeric">
-                                        <span class="sr-only">Введите количество</span>
-                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
-                                    </label>
-
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                        type="button" data-direction="plus">
-                                        <span class="sr-only">
-                                            Увеличить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#plusik"></use>
-                                        </svg>
-                                    </button>
-
-
-
-                                    <button class="order__btn order__btn--delete" type="button">
-                                        <span class="sr-only">
-                                            Удалить карту товара
-                                        </span>
-                                        <svg class="order__cross-mini" width="12" height="12">
-                                            <use xlink:href="images/images.svg#cross"></use>
-                                        </svg>
-                                    </button>
-
-                                </form>
-
-                                <span class="order__total">
+                                <span class="variety__total">
                                     1998<span class="price__index"><span class="currency">₽</span></span>
                                 </span>
                             </article>
 
-                            <article class="order__unit unit">
-
-                                <a class="unit__link order__link" href="#">
-                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                </a>
-                                <div class="order__info">
-                                    <span class="unit__name order__name">
-                                        Питохайя красная с белой мякотью, 1шт
+                            <article class="variety variety__order">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
                                     </span>
-
-                                    <ul class="price order__price">
-
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
                                         </li>
                                     </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <form class="quantity order__quantity">
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                        type="button" data-direction="minus">
-                                        <span class="sr-only">
-                                            Уменьшить количество
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/mango.jpg" alt="Манго" width="60"
+                                        height="60">
+                                </a>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
                                         </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#minus"></use>
-                                        </svg>
-                                    </button>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
 
-                                    <label for="" class="quantity__numeric order__numeric">
-                                        <span class="sr-only">Введите количество</span>
-                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
-                                    </label>
+                                    <h3 class="variety__name">
+                                        Манго, 1 шт
+                                    </h3>
 
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
 
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                        type="button" data-direction="plus">
-                                        <span class="sr-only">
-                                            Увеличить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#plusik"></use>
-                                        </svg>
-                                    </button>
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
 
-                                    <button class="order__btn order__btn--delete" type="button">
-                                        <span class="sr-only">
-                                            Удалить карту товара
-                                        </span>
-                                        <svg class="order__cross-mini" width="12" height="12">
-                                            <use xlink:href="images/images.svg#cross"></use>
-                                        </svg>
-                                    </button>
-                                </form>
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
 
-                                <span class="order__total">
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="variety__total">
                                     1998<span class="price__index"><span class="currency">₽</span></span>
                                 </span>
                             </article>
-
-                            <article class="order__unit unit">
-
-                                <a class="unit__link order__link" href="#">
-                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                </a>
-                                <div class="order__info">
-                                    <span class="unit__name order__name">
-                                        Питохайя красная с белой мякотью, 1шт
+                            <article class="variety variety__order">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
                                     </span>
-
-                                    <ul class="price order__price">
-
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
+                                <div class="variety__top">
+                                    <ul class="badge">
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--new" href="#">
+                                                Новинка
+                                            </a>
+                                        </li>
+                                        <li class="badge__item">
+                                            <a class="badge__link badge__link--discount" href="#">
+                                                -50%
+                                            </a>
                                         </li>
                                     </ul>
+                                    <button class="vector-btn variety--heart" type="button">
+                                        <span class="sr-only">
+                                            Отметить понравилось
+                                        </span>
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
+                                            <use xlink:href="images/images.svg#heart"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <form class="quantity order__quantity">
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                        type="button" data-direction="minus">
-                                        <span class="sr-only">
-                                            Уменьшить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#minus"></use>
-                                        </svg>
-                                    </button>
-
-                                    <label for="" class="quantity__numeric order__numeric">
-                                        <span class="sr-only">Введите количество</span>
-                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
-                                    </label>
-
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                        type="button" data-direction="plus">
-                                        <span class="sr-only">
-                                            Увеличить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#plusik"></use>
-                                        </svg>
-                                    </button>
-
-                                    <button class="order__btn order__btn--delete" type="button">
-                                        <span class="sr-only">
-                                            Удалить карту товара
-                                        </span>
-                                        <svg class="order__cross-mini" width="12" height="12">
-                                            <use xlink:href="images/images.svg#cross"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-
-                                <span class="order__total">
-                                    1998<span class="price__index"><span class="currency">₽</span></span>
-                                </span>
-                            </article>
-
-                            <article class="order__unit unit">
-
-                                <a class="unit__link order__link" href="#">
-                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
+                                <a class="variety__link" href="#">
+                                    <svg class="variety--learn" width="20" height="20">
+                                        <use xlink:href="images/images.svg#search"></use>
+                                    </svg>
+                                    <img class="variety__img" src="images/units/meat.jpg" alt="Свинная мякоть"
+                                        width="60" height="60">
                                 </a>
-                                <div class="order__info">
-                                    <span class="unit__name order__name">
-                                        Питохайя красная с белой мякотью, 1шт
-                                    </span>
+                                <div class="variety__wrapper">
+                                    <div class="variety__condition">
+                                        <span class="presence">
+                                            в наличии
+                                        </span>
+                                        <div class="variety__rating">
+                                            <div class="variety__text">4.5</div>
+                                            <div class="variety__star"></div>
+                                        </div>
+                                    </div>
 
-                                    <ul class="price order__price">
+                                    <h3 class="variety__name">
+                                        Свинная мякоть, 1 кг
+                                    </h3>
 
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
+                                    <div class="variety__buy">
+                                        <ul class="price">
+                                            <li class="price__cost price__cost--old">
+                                                <svg class="price__cross" width="20" height="20">
+                                                    <use xlink:href="images/images.svg#line"></use>
+                                                </svg>
+                                                1999 <span class="currency">₽</span>
+                                            </li>
+
+                                            <li class="price__cost">
+                                                999<span class="price__index"><span class="currency">₽</span></span>
+                                            </li>
+                                        </ul>
+                                        <form class="quantity">
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
+                                                type="button" data-direction="minus">
+                                                <span class="sr-only">
+                                                    Уменьшить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#minus"></use>
+                                                </svg>
+                                            </button>
+
+                                            <label class="quantity__numeric">
+                                                <span class="sr-only">
+                                                    Введите количество
+                                                </span>
+                                                <input class="quantity__number" type="number" name="numeric" value="1"
+                                                    min="1">
+                                            </label>
+                                            <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
+                                                type="button" data-direction="plus">
+                                                <span class="sr-only">
+                                                    Увеличить количество
+                                                </span>
+                                                <svg class="quantity__vector" width="16" height="16">
+                                                    <use xlink:href="images/images.svg#plusik"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+
+                                        <button class="vector-btn variety--cart" type="button">
+                                            <span class="sr-only">
+                                                Отправить в корзину
+                                            </span>
+                                            <svg class="variety__vector" width="16" height="16">
+                                                <use xlink:href="images/images.svg#cart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <form class="quantity order__quantity">
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                        type="button" data-direction="minus">
-                                        <span class="sr-only">
-                                            Уменьшить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#minus"></use>
-                                        </svg>
-                                    </button>
-
-                                    <label for="" class="quantity__numeric order__numeric">
-                                        <span class="sr-only">Введите количество</span>
-                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
-                                    </label>
-
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                        type="button" data-direction="plus">
-                                        <span class="sr-only">
-                                            Увеличить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#plusik"></use>
-                                        </svg>
-                                    </button>
-
-                                    <button class="order__btn order__btn--delete" type="button">
-                                        <span class="sr-only">
-                                            Удалить карту товара
-                                        </span>
-                                        <svg class="order__cross-mini" width="12" height="12">
-                                            <use xlink:href="images/images.svg#cross"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-
-                                <span class="order__total">
-                                    1998<span class="price__index"><span class="currency">₽</span></span>
-                                </span>
-                            </article>
-
-                            <article class="order__unit unit">
-
-                                <a class="unit__link order__link" href="#">
-                                    <img class="unit__img order__img" src="images/units/drugon-fruit.jpg"
-                                        alt="Питохайя красная с белой мякотью" width="60" height="60">
-                                </a>
-                                <div class="order__info">
-                                    <span class="unit__name order__name">
-                                        Питохайя красная с белой мякотью, 1шт
-                                    </span>
-
-                                    <ul class="price order__price">
-
-                                        <li class="price__cost">
-                                            999<span class="price__index"><span class="currency">₽</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <form class="quantity order__quantity">
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--minus"
-                                        type="button" data-direction="minus">
-                                        <span class="sr-only">
-                                            Уменьшить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#minus"></use>
-                                        </svg>
-                                    </button>
-
-                                    <label for="" class="quantity__numeric order__numeric">
-                                        <span class="sr-only">Введите количество</span>
-                                        <input class="quantity__number" type="number" name="numeric" value="1" min="1">
-                                    </label>
-
-
-                                    <button class="vector-btn quantity__vector-btn quantity__vector-btn--plus"
-                                        type="button" data-direction="plus">
-                                        <span class="sr-only">
-                                            Увеличить количество
-                                        </span>
-                                        <svg class="quantity__vector" width="16" height="16">
-                                            <use xlink:href="images/images.svg#plusik"></use>
-                                        </svg>
-                                    </button>
-
-                                    <button class="order__btn order__btn--delete" type="button">
-                                        <span class="sr-only">
-                                            Удалить карту товара
-                                        </span>
-                                        <svg class="order__cross-mini" width="12" height="12">
-                                            <use xlink:href="images/images.svg#cross"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-
-                                <span class="order__total">
+                                <span class="variety__total">
                                     1998<span class="price__index"><span class="currency">₽</span></span>
                                 </span>
                             </article>
@@ -762,7 +1005,7 @@
 
     <main class="main">
 
-        <h1 class="sr-only">Онлайн маркет Фрешок</h1>
+        <h1 class="sr-only">Главная страница магазина</h1>
 
         <div class="hotdeal">
             <div class="hotdeal__box">
@@ -900,7 +1143,15 @@
 
                     <ul class="products__list">
                         <li class="products__item mix category-fruits">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -941,9 +1192,9 @@
                                         </div>
                                     </div>
 
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Ананас, 1кг
-                                    </span>
+                                    </h3>
 
                                     <div class="variety__buy">
                                         <ul class="price">
@@ -955,7 +1206,7 @@
                                             </li>
 
                                             <li class="price__cost">
-                                                999 <span class="currency">₽</span>
+                                                999<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
 
@@ -1002,10 +1253,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                         <li class="products__item mix category-fruits">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
@@ -1033,14 +1295,14 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Лимон, 1кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
 
                                         <ul class="price">
                                             <li class="price__cost">
-                                                199 <span class="currency">₽</span>
+                                                199<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
 
@@ -1084,11 +1346,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="products__item mix category-fruits">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1123,13 +1396,13 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Питахайя красная с белой мякотью, 1шт
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost">
-                                                1019 <span class="currency">₽</span>
+                                                1019<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
                                         <form class="quantity">
@@ -1170,11 +1443,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="products__item mix category-vegetables">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1209,13 +1493,13 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Перец оранжевый, 1кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost">
-                                                349 <span class="currency">₽</span>
+                                                349<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
                                         <form class="quantity">
@@ -1253,10 +1537,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                         <li class="products__item mix category-vegetables">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1291,13 +1586,13 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Морковь молодая с бабушкиной грядки, 1кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost">
-                                                49 <span class="currency">₽</span>
+                                                49<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
                                         <form class="quantity">
@@ -1338,10 +1633,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                         <li class="products__item mix category-juices">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1354,7 +1660,7 @@
                                         <span class="sr-only">
                                             Отметить понравилось
                                         </span>
-                                        <svg class="unit--heart" width="32" height="29">
+                                        <svg class="variety__vector variety__vector--heart" width="32" height="29">
                                             <use xlink:href="images/images.svg#heart"></use>
                                         </svg>
                                     </button>
@@ -1376,10 +1682,10 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
                                         безалкогольный
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -1389,7 +1695,7 @@
                                                 299 <span class="currency">₽</span>
                                             </li>
                                             <li class="price__cost">
-                                                199 <span class="currency">₽</span>
+                                                199<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
                                         <form class="quantity">
@@ -1429,10 +1735,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                         <li class="products__item mix category-grocery">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1467,13 +1784,13 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Кофе с коноплей органический Caffé Salomoni 250г
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost">
-                                                877 <span class="currency">₽</span>
+                                                877<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
 
@@ -1515,10 +1832,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                         <li class="products__item mix">
-                            <article class="variety">
+                            <article class="variety variety__products">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <button class="vector-btn variety--heart" type="button">
                                         <span class="sr-only">
@@ -1546,13 +1874,13 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Кетчуп томатный детский органический Bio-Zentrale 500мл
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost">
-                                                600 <span class="currency">₽</span>
+                                                600<span class="price__index"><span class="currency">₽</span></span>
                                             </li>
                                         </ul>
 
@@ -1597,6 +1925,9 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                     </ul>
@@ -1685,6 +2016,14 @@
                     <ul class="stock__list">
                         <li class="stock__item mix category-new">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1725,9 +2064,9 @@
                                         </div>
                                     </div>
 
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Ананас, 1кг
-                                    </span>
+                                    </h3>
 
                                     <div class="variety__buy">
                                         <ul class="price">
@@ -1781,12 +2120,22 @@
                                         </button>
                                     </div>
                                 </div>
-
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1821,9 +2170,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Кофе с коноплей органический Caffé Salomoni 250г
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -1876,11 +2225,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -1915,9 +2275,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Клубника, 1 кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -1970,11 +2330,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -2009,9 +2380,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Манго, 1 шт
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -2064,11 +2435,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
                         <li class="stock__item mix category-new">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -2103,9 +2485,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Лосось, 1 кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -2158,10 +2540,21 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
-                        <li class="stock__item mix category-new">
+                        <li class="stock__item mix category-hit">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -2196,9 +2589,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Сок Granini овощной 100%, 0.5л
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -2251,11 +2644,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
-                        <li class="stock__item mix category-new">
+                        <li class="stock__item mix category-hit">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -2290,9 +2694,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Фруктовая корзина, 1 шт
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -2345,11 +2749,22 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
 
-                        <li class="stock__item mix category-new">
+                        <li class="stock__item mix category-hit">
                             <article class="variety variety__stock">
+                                <button class="variety--delete" type="button">
+                                    <span class="sr-only">
+                                        Удалить карту товара
+                                    </span>
+                                    <svg class="variety__cross-mini" width="12" height="12">
+                                        <use xlink:href="images/images.svg#cross"></use>
+                                    </svg>
+                                </button>
                                 <div class="variety__top">
                                     <ul class="badge">
                                         <li class="badge__item">
@@ -2384,9 +2799,9 @@
                                             <div class="variety__star"></div>
                                         </div>
                                     </div>
-                                    <span class="variety__name">
+                                    <h3 class="variety__name">
                                         Свинина мякоть, 1 кг
-                                    </span>
+                                    </h3>
                                     <div class="variety__buy">
                                         <ul class="price">
                                             <li class="price__cost price__cost--old">
@@ -2439,6 +2854,9 @@
                                         </button>
                                     </div>
                                 </div>
+                                <span class="variety__total">
+                                    1998<span class="price__index"><span class="currency">₽</span></span>
+                                </span>
                             </article>
                         </li>
                     </ul>
@@ -2655,52 +3073,52 @@
                         </div>
                     </form>
                 </div>
-                <div class="footer__menu abroad">
-                    <ul class="footer__nav">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Публичная оферта
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Оплата и доставка
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Вакансии
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Акции
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Отзывы
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Нововсти
-                            </a>
-                        </li>
+                <!-- <div class="footer__menu abroad"> -->
+                <ul class="footer__nav">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Нововсти
+                        </a>
+                    </li>
 
-                    </ul>
-                </div>
-                <address class="footer__address abroad">
+                </ul>
+                <!-- </div> -->
+                <address class="footer__address">
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a class="footer__link" href="tel:+7907288365">

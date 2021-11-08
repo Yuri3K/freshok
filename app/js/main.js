@@ -25,8 +25,8 @@ $(function () {
         $(this).find('.sort__vector').toggleClass('sort__vector--rotate');
     });
 
-    $('.order__btn--delete').on('click', function () {
-        $(this).closest('.order__unit').css({ 'display': 'none' });
+    $('.variety--delete').on('click', function () {
+        $(this).closest('.variety').css({ 'display': 'none' });
     });
 
     $('.top__button').on('click', function () {
