@@ -48,6 +48,7 @@
         &:focus {
             fill: $bright-800;
             transform: scale(1.2);
+            outline: transparent;
         }
 
         &:active {

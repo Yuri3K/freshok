@@ -107,15 +107,3 @@ $bright-200: #a12e5e;
     height: 0;
     appearance: none;
 }
-
-%footer-line {
-    // &::before {
-        content: "";
-        position: absolute;
-        left: -9999px;
-        right: 0;
-        bottom: 0;
-        border-bottom: 1px solid rgba($bright-1000, 0.1);
-        box-shadow: 9999px 0 0 rgba($bright-1000, 0.1);
-    // }
-}

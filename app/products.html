@@ -1007,6 +1007,29 @@
 
         <h1 class="sr-only">Страница каталога продуктов</h1>
 
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">
+                            Главная
+                        </a>
+                        <svg class="breadcrumbs__vector" width="6" height="10">
+                            <use xlink:href="images/images.svg#breadcrumbs-arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Каталог товаров
+                        </a>
+                        <svg class="breadcrumbs__vector" width="6" height="10">
+                            <use xlink:href="images/images.svg#breadcrumbs-arrow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <section class="shopping">
             <div class="container">
                 <h2 class="shopping__title title">
@@ -2589,10 +2612,100 @@
                                     </article>
                                 </li>
                             </ul>
+
+                            <div class="content__bottom">
+                                <button class="button" type="button">Показать еще</button>
+
+                                <div class="pagination">
+                                    <a class="pagination__link pagination__link--prev pagination__link--disabled"
+                                        href="#">
+                                        <svg class="pagination__vector" width="11" height="18">
+                                            <use xlink:href="images/images.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                    <ul class="pagination__list">
+                                        <li class="pagination__item pagination__item--number pagination__item--active">
+                                            <a class="pagination__link" href="#">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="pagination__item pagination__item--number">
+                                            <a class="pagination__link" href="#">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li class="pagination__item pagination__item--points">
+                                            <span class="pagination__link" href="#">
+                                                ...
+                                            </span>
+                                        </li>
+                                        <li class="pagination__item pagination__item--number">
+                                            <a class="pagination__link" href="#">
+                                                9
+                                            </a>
+                                        </li>
+                                        <li class="pagination__item pagination__item--number">
+                                            <a class="pagination__link" href="#">
+                                                10
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="pagination__link pagination__link--next" href="#">
+                                        <svg class="pagination__vector" width="11" height="18">
+                                            <use xlink:href="images/images.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
         </section>
+
+        <div class="advantages">
+            <div class="container">
+                <ul class="advantages__list">
+                    <li class="advantages__item advantages__item--scooter">
+                        <svg class="advantages__vector" width="50" height="50">
+                            <use xlink:href="images/images.svg#scooter"></use>
+                        </svg>
+                        <span class="advantages__service">
+                            Бесплатная доставка
+                        </span>
+                        <span class="advantages__descr">
+                            Для заказов на сумму от 500 <span class="currency">₽</span>
+                        </span>
+                    </li>
+                    <li class="advantages__item advantages__item--return">
+                        <svg class="advantages__vector" width="50" height="50">
+                            <use xlink:href="images/images.svg#return"></use>
+                        </svg>
+                        <span class="advantages__service">
+                            Возврат товара
+                        </span>
+                        <span class="guarantee__descr">
+                            Если товары были испорчены
+                        </span>
+                    </li>
+                    <li class="advantages__item advantages__item--hours">
+                        <svg class="advantages__vector" width="50" height="50">
+                            <use xlink:href="images/images.svg#hours"></use>
+                        </svg>
+                        <span class="advantages__service">
+                            Поддержка 24/7
+                        </span>
+                        <span class="advantages__descr">
+                            Лучшие операторы
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -2620,52 +2733,50 @@
                         </div>
                     </form>
                 </div>
-                <div class="footer__menu footer__abroad">
-                    <ul class="footer__nav">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Публичная оферта
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Оплата и доставка
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Вакансии
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Акции
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Отзывы
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                Нововсти
-                            </a>
-                        </li>
+                <ul class="footer__nav">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Акции
+                        </a>
+                    </li>
 
-                    </ul>
-                </div>
-                <address class="footer__address footer__abroad">
+                </ul>
+                <address class="footer__address">
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a class="footer__link" href="tel:+7907288365">

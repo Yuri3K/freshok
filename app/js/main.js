@@ -1,9 +1,15 @@
 $(function () {
 
+
+    $('a[href="#"]').click(function () {
+        return false;
+    });
+
+
+
     $('.catalog__btn, .catalog__sublink').on('click', function () {
         $('.catalog__sublist, .catalog__btn, .catalog__vector--arrow').toggleClass('show');
     });
-
 
     $('.user--cart, .order__btn--close').on('click', function () {
         $('.order').toggleClass('order--show');
@@ -41,6 +47,18 @@ $(function () {
     $('.top__button--grid').on('click', function () {
         $('.variety').removeClass('columns');
     });
+
+    $('.pagination__link--next').on('click', function () {
+        $('.pagination').find('.pagination__item--active').next().addClass('pagination__item--active');
+        $('.pagination').find('.pagination__item--active').prev().removeClass('pagination__item--active');
+
+    });
+
+    $('.pagination__link--prev').on('click', function () {
+        $('.pagination').find('.pagination__item--active').prev().addClass('pagination__item--active');
+        $('.pagination').find('.pagination__item--active').next().removeClass('pagination__item--active');
+    });
+
 
 
 
@@ -110,8 +128,8 @@ $(function () {
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 3,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
 
         responsive: [
             {
@@ -264,8 +282,5 @@ const quantity = function () {
 };
 
 quantity();
-
-
-
 
 
