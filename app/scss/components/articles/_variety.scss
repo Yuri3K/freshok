@@ -71,6 +71,10 @@
             margin-bottom: 15px;
         }
 
+        @media (max-width: 576px) {
+            margin-bottom: 0;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -137,13 +141,28 @@
         align-items: center;
         margin: -2px 0 4px 0;
         padding-left: 6px;
+
+        @media (max-width: 576px) {
+            position: relative;
+            margin: -8px 0 7px;
+            padding-left: 0;
+            z-index: 1;
+        }
     }
     
     &__rating {
         display: flex;
         right: 8px;
         bottom: 11px;
+
+        @media (max-width: 576px) {
+            font-size: 10px;
+        }
     }
+
+    .jq-ry-container {
+    padding: 0 2px;
+}
     
     &__text {
         font-weight: 700;
@@ -196,6 +215,7 @@
 
         & .quantity {
             margin-bottom: 4px;
+
             @media (max-width: 576px) {
                 width: 100%;
                 margin: 0 auto 10px;
@@ -451,7 +471,7 @@
         .variety__link {
             margin: 0 18px 0 0;
             .variety__img {
-                max-width: 200px;
+                width: 200px;
                 height: 145px;
             }
         }
@@ -473,6 +493,12 @@
         .variety__buy {
             padding: 0;
             margin-right: 5px;
+        }
+
+        .quantity {
+            @media (max-width: 992px) {
+                margin-right: 7px;
+            }
         }
 
     }

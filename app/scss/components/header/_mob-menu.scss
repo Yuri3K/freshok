@@ -19,7 +19,7 @@
     z-index: 12;
     transition: opacity 0.5s;
 
-    &.mob-menu--active {
+    &.show {
         display: flex;
         left: 0;
         opacity: 1;

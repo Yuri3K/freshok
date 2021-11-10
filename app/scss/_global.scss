@@ -12,6 +12,11 @@ body {
     line-height: 1.4;
     background-color: $bright-1000;
     letter-spacing: 0.03em;
+
+    &.show {
+        max-height: 100vh;
+        overflow: hidden;
+    }
 }
 
 button {
@@ -90,6 +95,11 @@ button {
     align-self: flex-start;
     text-transform: uppercase;
     margin-bottom: 6px;
+
+    @media (max-width: 576px) {
+        margin-bottom: 0;
+        font-size: 8px;
+    }
 
     &.ending {
         color: $bright-300;
@@ -254,32 +264,47 @@ button {
     }
 }
 
-
-// .abroad {
-
-//     @media (max-width: 768px) {
-//         position: relative;
-        
-//         &::after {
-//             content: "";
-//             position: absolute;
-//             top: 0;
-//             left: calc((100vw - 100%) / -2);
-//             right: calc((100vw - 100%) / -2);
-//             height: 100%;
-//             background-color: inherit;
-//             z-index: 0;
-//             border-bottom: 1px solid rgba($bright-1000, 0.1);
-//         }
-//     }
-// }
-
 .sort {
+    min-width: 300px;
+    background-color: $bright-1000;
+
+    @media (max-width: 1200px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 320px;
+        max-height: 100vh;
+        padding-top: 76px;
+        z-index: 12;
+        box-shadow: 700px 0 0 700px rgba($dark-1000, 0.5);
+        overflow-y: auto;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__cross {
+        display: none;
+
+        @media (max-width: 1200px) {
+            display: block;
+            position: absolute;
+            right: 32px;
+            top: 29px;
+            fill: $dark-1000;;
+        }
+    }
+
     &__list {
         max-height: 0;
     }
 
     &__item {
+        width: 300px;
         padding: 18px 0 18px 15px;
         background-color: $bright-1000;
         border: 1px solid $secondary-600;
