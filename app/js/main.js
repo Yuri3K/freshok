@@ -59,6 +59,7 @@ $(function () {
         $('.pagination').find('.pagination__item--active').next().removeClass('pagination__item--active');
     });
 
+
     $('.top__button--filter').on('click', function () {
         $('.sort').addClass('sort--active');
         $('.top__button--filter').addClass('active');
@@ -71,12 +72,23 @@ $(function () {
         $('body').css('overflow', 'auto');
     });
 
+    $('.tabs__title').on('click', function (e) {
+        e.preventDefault();
+        $('.tabs__title').removeClass('tabs__title--active');
+        $(this).addClass('tabs__title--active');
+
+        $('.tabs__box').removeClass('tabs__box--active');
+        $($(this).attr('href')).addClass('tabs__box--active')
+    });
+
+
+
 
 
 
     $('.hotdeal').slick({
-        prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span><svg class="slick-arrow__picture" width="20" height="32"><use xlink: href = "images/images.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button class="slick-arrow--next" type="button"><span class="sr-only">Следующий слайд</span><svg class="slick-arrow__picture" width="20" height="32"><use xlink: href = "images/images.svg#arrow-right"></use></svg></button>',
+        prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button class="slick-arrow--next" type="button"><span class="sr-only">Следующий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-right"></use></svg></button>',
 
         responsive: [
             {
@@ -89,6 +101,50 @@ $(function () {
         ]
     });
 
+    $('.box__pictures').slick({
+        prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button class="slick-arrow--next" type="button"><span class="sr-only">Следующий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-right"></use></svg></button>',
+
+        arrows: true,
+        dots: false,
+    });
+
+    $('.interest__content').slick({
+        prevArrow: '<button class="slick-arrow--prev" type="button"><span class="sr-only">Предыдущий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button class="slick-arrow--next" type="button"><span class="sr-only">Следующий слайд</span><svg class="slick-arrow__vector" width="20" height="32"><use xlink: href = "images/images.svg#arrow-right"></use></svg></button>',
+
+        arrows: true,
+        // infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    dots: true,
+                }
+            },
+        ]
+    });
 
 
     // (function quantityProducts() {
@@ -176,15 +232,13 @@ $(function () {
         ]
     });
 
-
-
-
     $(".variety__star").rateYo({
         rating: 1,
         maxValue: 1,
         numStars: 1,
         fullStar: true,
-        // starWidth: "40px",
+        readOnly: true,
+        ratedFill: "#FFB800"
     });
 
     if ($(window).width() <= 576) {
@@ -194,9 +248,15 @@ $(function () {
         $(".variety__star").rateYo("option", "starWidth", "16px");
     }
 
-
-
-
+    $(".box__star, .tabs__star").rateYo({
+        normalFill: "rgba(193, 193, 193, 0.3)",
+        numStars: 5,
+        fullStar: true,
+        starWidth: "16px",
+        spacing: "6px",
+        readOnly: true,
+        ratedFill: "#FFB800"
+    });
 
     var $range = $(".range__slider");
     var $inputFrom = $(".range__input--from");
@@ -260,9 +320,6 @@ $(function () {
 
 
     $('.top__select').styler();
-
-
-    // $(".price__cost--old").append("<svg class=cross><line x1='0' y1='100%' x2='100%' y2='0' stroke-width='2' stroke='rgb(193,193,193)'></line></svg>");
 
 });
 

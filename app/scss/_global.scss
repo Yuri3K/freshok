@@ -362,18 +362,23 @@ button {
 
 .breadcrumbs {
     background-color: $secondary-100;
+    padding: 25px 0;
+    margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
 
     &__list {
         display: flex;
-        height: 65px;
+        align-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__item {
         line-height: 1.2;
 
-        
-        
         &:last-child > .breadcrumbs__vector {
             display: none;
         }

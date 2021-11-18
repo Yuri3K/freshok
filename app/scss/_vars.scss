@@ -12,11 +12,13 @@ $dark-1000: #000;
 $dark-950: #111111;
 $dark-900: #121212;
 $dark-800: #31352B;
+$dark-700: #4F4F4F;
 $dark-500: #505050;
 $bright-1000: #FFFFFF;
 $bright-500: #FF7A00;
 $bright-800: #FFB800;
 $bright-700: #b9ab2a;
+$bright-600: #EED79B;
 $bright-300: #CF3E3B;
 $bright-200: #a12e5e;
 
@@ -103,7 +105,8 @@ $bright-200: #a12e5e;
 
 %input-hidden {
     position: absolute;
-    width: 0;
-    height: 0;
+    width: 1px;
+    height: 1px;
     appearance: none;
+
 }

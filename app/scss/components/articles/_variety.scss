@@ -3,9 +3,15 @@
     display: flex;
     flex-direction: column;
     min-width: 170px;
+    max-width: 300px;
     border: 1px solid rgba($dark-950, 0.2);
     border-radius: 6px;
     padding: 11px 12px 15px 12px;
+
+    @media (max-width: 374px) {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
     &:hover {
         border: 1px solid $main-900;
@@ -65,6 +71,7 @@
 
     &__link {
         position: relative;
+        display: block;
         margin: 0 -12px;
 
         @media (max-width: 768px) {
@@ -261,6 +268,7 @@
         flex-direction: row;
         align-items: flex-end;
         width: 452px;
+        max-width: 452px;
         height: 84px;
         margin: 12px 12px 0 12px;
         padding: 8px 12px 11px 12px;
