@@ -1,0 +1,97 @@
+.hotdeal {
+    font-size: 0;
+
+    &__wrapper {
+        position: relative;
+        @extend %bg;
+        min-height: 600px;
+
+        @media (max-width: 992px) {
+            min-height: 450px;
+        }
+
+        @media (max-width: 768px) {
+            min-height: 320px;
+        }
+    }
+
+    &__inbox {
+        @extend %tr-y;
+        padding: 24px;
+        background-color: rgba($bright-1000, 0.8);
+        border-radius: 6px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 1290px;
+
+        @media (max-width: 768px) {
+            padding: 10px 16px;
+        }
+    }
+
+    &__title,
+    &__stock,
+    &__text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    &__title,
+    &__stock {
+        font-family: 'Ruda', sans-serif;
+        font-weight: 900;
+        width: 75%;
+        font-size: 60px;
+        line-height: 1.3;
+        color: $dark-500;
+        text-transform: uppercase;
+        letter-spacing: 0;
+
+        @media (max-width: 992px) {
+            width: 100%;
+            font-size: 42px;
+        }
+
+        @media (max-width: 576px) {
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 20px;
+        }
+    }
+
+    &__stock {
+        margin-bottom: 6px;
+        color: $bright-300;
+
+        @media (max-width: 768px) {
+            margin-bottom: 17px;
+        }
+    }
+    
+    &__text {
+        font-size: 16px;
+        margin-bottom: 35px;
+        letter-spacing: 0;
+        line-height: 1.4;
+        
+        @media (max-width: 768px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        @extend %conditions-button;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}

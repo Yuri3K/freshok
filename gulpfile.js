@@ -4,12 +4,13 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
+const svgstore = require('gulp-svgstore');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(scss({ outputStyle: 'expanded' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 versions'],
@@ -22,6 +23,11 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -44,6 +50,12 @@ function images() {
             })
         ]))
         .pipe(dest('dist/images'))
+}
+
+function svgSprite() {
+    return src('app/images/**/*.svg')
+        .pipe(svgstore())
+        .pipe(dest('app/images'))
 }
 
 function browsersync() {
@@ -82,7 +94,7 @@ exports.images = images;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.cleanDist = cleanDist;
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, svgSprite, browsersync, watching);
 exports.build = series(cleanDist, images, build);
 
 

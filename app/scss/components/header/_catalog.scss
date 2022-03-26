@@ -1,0 +1,114 @@
+.catalog {
+    position: relative;
+    margin: 10px auto;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    &__btn {
+        position: relative;
+        height: 50px;
+        min-width: 240px;
+        max-width: 320px;
+        padding: 15px 35px 15px 60px;
+        margin-right: 15px;
+        border-radius: 6px;
+        transition: all 0.5s;
+        background-color: $bright-1000;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        color: $main-900;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @extend %conditions-button;
+
+        &:hover,
+        &.show {
+            background-color: $main-200;
+            border-radius: 6px 6px 0px 0px;
+        }
+
+        @media (max-width: 1200px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__vector {
+        position: absolute;
+
+        &--burger {
+            top: 15px;
+            left: 20px;
+            fill: $main-900;
+        }
+
+        &--arrow {
+            top: 23px;
+            right: 10px;
+            fill: $main-900;
+
+            &.show {
+                transition: transform 0.5s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__sublist {
+        position: absolute;
+        width: calc( 100% - 7px );
+        opacity: 0;
+        left: -2000px;
+        transition: opacity 0.5s;
+        z-index: 1;
+
+        &.show {
+            opacity: 1;
+            left: -4px;
+
+            @media (max-width: 1200px) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            width: 248px;
+        }
+    }
+
+    &__subitem:last-child .catalog__sublink {
+        border-radius: 0 0 6px 6px;
+        border-bottom: none;
+    }
+
+    &__sublink {
+        display: block;
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.07em;
+        color: $dark-1000;
+        background-color: $bright-1000;
+        border-bottom: 1px solid rgba($secondary-600, 0.3);
+        border-left: 3px solid transparent;
+
+        &:hover {
+            border-left: 3px solid $main-900;
+            color: $main-900;
+        }
+
+        &:focus {
+            background-color: $secondary-600;
+        }
+
+        &:active {
+            letter-spacing: 2px;
+        }
+    }
+}
+
+
+
